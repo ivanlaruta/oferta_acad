@@ -28,6 +28,11 @@ route::get('oferta_wapp',[
 		'as'   =>	'oferta_wapp'
 	]);
 
+route::get('programacion_rrss',[
+		'uses' =>'CursosController@programacion_rrss',
+		'as'   =>	'programacion_rrss'
+	]);
+
 route::get('services',[
 		'uses' =>'PruebaController@services',
 		'as'   =>	'services'

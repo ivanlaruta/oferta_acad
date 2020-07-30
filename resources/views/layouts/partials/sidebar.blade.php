@@ -15,8 +15,11 @@
                     <li class="nav-item pcoded-menu-caption">
                         <label>Servicios</label>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item {{ Request::routeIs('oferta_wapp') ? 'active' : '' }}">
                         <a href="{{ route('oferta_wapp')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Oferta Bot Wapp</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('programacion_rrss')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Programacion RRSS</span></a>
                     </li>
                    
                 </ul>

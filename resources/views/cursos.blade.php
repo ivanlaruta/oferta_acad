@@ -34,6 +34,7 @@
           @foreach($tipos as $det)
             <li><a href="#{{$det->tipo_oferta_min}}"><i class="bx bx-right-arrow-alt"></i> <span>{{$det->tipo_oferta}}</span></a></li>
           @endforeach
+          <li><a href="https://egpp.gob.bo/"><i class="bx bx-exit"></i> <span>VOLVER A LA PAGINA WEB</span></a></li>
           
         </ul>
       </nav>
@@ -76,7 +77,12 @@
           @if($det_tipo->tipo_oferta == $det_cuso->tipo_oferta)
             <div class="col-lg-4 col-md-6 portfolio-item {{$det_cuso->tipo_oferta_min}} {{$det_cuso->area_curso_min}}">
               <div class="portfolio-cuadro">
-                <img src="{{$det_cuso->url_imagen}}" class="img-fluid" alt="">
+                <!-- {{$det_cuso->link_imagen}} -->
+                @if($det_cuso->link_imagen!='')
+                  <img src="{{$det_cuso->url_imagen}}" class="img-fluid" alt="">
+                @else
+                  <img src="{{URL::asset('img/generico.png')}}" class="img-fluid" alt="">
+                @endif
                 <div class="about">
                     <div class="col-lg-12 content">
                       <div class="text-center">
@@ -86,7 +92,7 @@
                       <hr>
                       <div class="row">
                         <ul>
-                          <li><i class="fa fa-calendar"></i> <strong>Incio:</strong> {{$det_cuso->fec_ini_curso}}</li>
+                          <li><i class="fa fa-calendar"></i> <strong>Inicio:</strong> {{$det_cuso->fec_ini_curso}}</li>
                           <li><i class="fa fa-clock-o"></i> <strong>Horarios:</strong> {{$det_cuso->horarios}}</li>
                           <li><i class="fa fa-book"></i> <strong>Carga Horaria:</strong> {{$det_cuso->carga_horaria}} Horas</li>
                           <li><i class="fa fa-credit-card"></i> <strong>Inversion:</strong> Bs.  {{$det_cuso->costo_curso}}</li>

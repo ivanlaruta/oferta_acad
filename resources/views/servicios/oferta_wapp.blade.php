@@ -79,36 +79,40 @@
                                             <h5>OFERTA ACADEMICA</h5>
                                         </div>
                                         <div class="card-block table-border-style">
+                                            @foreach($tipos as $det_tipo)
                                             <div class="table-responsive">
-                                                <table class="table table-hover table-bordered">
+                                                <table class="table table-hover table-bordered datatables">
                                                     <thead>
                                                         <tr>
-                                                            <th>Tipo oferta</th>
-                                                            <th>Mensaje</th>
+                                                            <th>🎓 *{{$det_tipo->tipo_oferta}}* 🎓 </th>
+                                                           
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                       @foreach($cusos as $det_cuso)
+                                                        @if($det_tipo->tipo_oferta == $det_cuso->tipo_oferta)
                                                         <tr>
-                                                            <td scope="row">{{$det_cuso->tipo_oferta}}</td>
                                                             <td>
-                                                            <strong>  *{{$det_cuso->curso}}* </strong>
-                                                            <br> _{{$det_cuso->area_curso}}_
-                                                            <br>  📅 Inicio: {{$det_cuso->fec_ini_curso}}
-                                                            <br>  ⏰ Horarios: {{$det_cuso->horarios}}
-                                                            <br>  💲 Inversion: Bs. {{$det_cuso->costo_curso}}
-                                                            <br>  🌐 Para ver mas detalle e inscripcion siga este enlace: {{services($det_cuso->url_gesac)}}
-                                                            <br>  🙋‍♀️🙋‍♂️ Coordinacion: *{{$det_cuso->coordinador}}*
-                                                            <br>  📧 Correo:{{$det_cuso->email_infor}}
-                                                            <br>  📱 Whatsapp: {{services($det_cuso->url_wapp)}}
-
-                                                            </td>
-                                                            
+                                                                <strong>  ✅*{{$det_cuso->curso}}* </strong>
+                                                                <br> _{{$det_cuso->area_curso}}_
+                                                                <br>  📅 Inicio: {{$det_cuso->fec_ini_curso}}
+                                                                <br>  ⏰ Horarios: {{$det_cuso->horarios}}
+                                                                <br>  💲 Inversion: Bs. {{$det_cuso->costo_curso}}
+                                                                <br>  🌐 Para ver mas detalle e inscripcion siga este enlace: {{services($det_cuso->url_gesac)}}
+                                                                <br>  🙋‍♀️🙋‍♂️ Coordinacion: *{{$det_cuso->coordinador}}*
+                                                                <br>  📧 Correo:{{$det_cuso->email_infor}}
+                                                                <br>  📱 Whatsapp: {{services($det_cuso->url_wapp)}}
+                                                                <br>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+                                                                <br><br>
+                                                            </td>     
                                                         </tr>
+                                                        @endif
                                                       @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
+                                            <br><hr>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
@@ -126,3 +130,20 @@
 
 
 @endsection
+
+@section('js')
+<script type="text/javascript">
+   
+
+  var table = $('.datatables').DataTable({
+    dom: 'Brt',
+    buttons: ['copy'],
+    lengthMenu: [[-1], ["TODO"]],
+    
+  });
+
+
+</script>
+
+@endsection
+

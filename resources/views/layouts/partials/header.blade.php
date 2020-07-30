@@ -36,13 +36,13 @@
                         <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
                         <div class="dropdown-menu dropdown-menu-right notification">
                             <div class="noti-head">
-                                <h6 class="d-inline-block m-b-0">Notifications</h6>
-                                <div class="float-right">
+                                <h6 class="d-inline-block m-b-0">Notificaciones</h6>
+                                <!-- <div class="float-right">
                                     <a href="javascript:" class="m-r-10">mark as read</a>
                                     <a href="javascript:">clear all</a>
-                                </div>
+                                </div> -->
                             </div>
-                            <ul class="noti-body">
+                            <ul class="noti-body"><!-- 
                                 <li class="n-title">
                                     <p class="m-b-0">NEW</p>
                                 </li>
@@ -76,9 +76,9 @@
                                         </div>
                                     </div>
                                 </li>
-                            </ul>
+                             --></ul>
                             <div class="noti-footer">
-                                <a href="javascript:">show all</a>
+                                <a href="javascript:">Ver todo</a>
                             </div>
                         </div>
                     </div>

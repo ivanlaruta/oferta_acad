@@ -63,7 +63,8 @@ class CursosController extends Controller
 				c.email_infor,
 				c.horarios,
 				cast(c.fec_fin_preins as date) fec_fin_preins,
-				concat('http://webdisk.cursos.egpp.gob.bo/sisacademico/archivos/',c.id_curso,'/',c.link_imagen) url_imagen
+				concat('http://webdisk.cursos.egpp.gob.bo/sisacademico/archivos/',c.id_curso,'/',c.link_imagen) url_imagen,
+				c.link_imagen
 				from 		gesac.cursos c
 							join gesac.tipos_cursos as t on t.id_tipo_curso = c.tipo
 							join gesac.areas_cursos as a on a.id_area_curso =c.area
@@ -92,8 +93,29 @@ class CursosController extends Controller
         dd($cursos);
     }
 
+    public function programacion_rrss()
+    {
+        dd('hola');
+    }
+
     public function oferta_wapp()
     {
+
+    	$tipos = DB::select( DB::raw("
+
+				select 	distinct
+								case when a.area_curso like '%IDIOMA%' then 1000 else t.id_tipo_curso end as id_tipo_curso,
+								case when a.area_curso like '%IDIOMA%' then 'IDIOMAS' else t.tipo_curso end as tipo_oferta,
+								case when a.area_curso like '%IDIOMA%' then 'IDIOMAS' else replace(t.tipo_curso,' ','_') end as tipo_oferta_min
+				from 		gesac.cursos c
+								join gesac.tipos_cursos as t on t.id_tipo_curso = c.tipo
+								join gesac.areas_cursos as a on a.id_area_curso =c.area
+				where 	c.publicar = 1
+				and cast(c.fec_fin_preins as date)>=cast(now() as date)
+				order by id_tipo_curso
+
+            "));
+
     	$cusos = DB::select( DB::raw("
 
 				select
@@ -131,6 +153,7 @@ class CursosController extends Controller
 
 		// dd($tipos);
         return view('servicios.oferta_wapp')
+        ->with('tipos',$tipos)
         ->with('cusos',$cusos);
 
     }
