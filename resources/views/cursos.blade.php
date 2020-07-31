@@ -92,7 +92,7 @@
                       <hr>
                       <div class="row">
                         <ul>
-                          <li><i class="fa fa-calendar"></i> <strong>Inicio:</strong> {{$det_cuso->fec_ini_curso}}</li>
+                          <li><i class="fa fa-calendar"></i> <strong>Inicio:</strong> {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}</li>
                           <li><i class="fa fa-clock-o"></i> <strong>Horarios:</strong> {{$det_cuso->horarios}}</li>
                           <li><i class="fa fa-book"></i> <strong>Carga Horaria:</strong> {{$det_cuso->carga_horaria}} Horas</li>
                           <li><i class="fa fa-credit-card"></i> <strong>Inversion:</strong> Bs.  {{$det_cuso->costo_curso}}</li>
