@@ -77,7 +77,7 @@ class CursosController extends Controller
             "));
 
 		// dd($tipos);
-        return view('cursos')
+        return view('servicios.oferta.cursos')
         ->with('tipos',$tipos)
         ->with('areas',$areas)
         ->with('cusos',$cusos);

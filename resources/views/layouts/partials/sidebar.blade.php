@@ -13,6 +13,12 @@
             <div class="navbar-content scroll-div">
                 <ul class="nav pcoded-inner-navbar">
                     <li class="nav-item pcoded-menu-caption">
+                        <label>Certificacioness</label>
+                    </li>
+                    <li class="nav-item {{ Request::routeIs('Certificaciones.lista') ? 'active' : '' }}">
+                        <a href="{{ route('Certificaciones.lista')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Habilitar entrega</span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
                         <label>Servicios</label>
                     </li>
                     <li class="nav-item {{ Request::routeIs('oferta_wapp') ? 'active' : '' }}">
