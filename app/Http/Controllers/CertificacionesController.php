@@ -11,14 +11,8 @@ use DB;
 
 class CertificacionesController extends Controller
 {
-    
-    public function lista()
-    {
-
-        return view('certificaciones.index');
-    }
-
-    public function consulta(Request $request)
+   
+    public function ajax_consultar(Request $request)
     {
 
         $participante=Participante::where('ci',$request->ci)->get();
@@ -27,7 +21,7 @@ class CertificacionesController extends Controller
             $id=($participante[0]->id_participante);
 
             $inscripcion=Inscripcion::where('participante',$id)->orderBy('curso', 'desc')->get();
-            return view('certificaciones.resp_consulta_certificados')
+            return view('certificaciones.pagina_web._ajax_consultar')
             ->with('participante',$participante[0])
             ->with('inscripcion',$inscripcion);
 
@@ -40,7 +34,29 @@ class CertificacionesController extends Controller
 
     }
 
-    public function busca_curso(Request $request)
+   public function ajax_verificar(Request $request)
+    {
+
+        $participante=Participante::where('ci',$request->ci)->get();
+
+        if(!empty($participante[0])){
+            $id=($participante[0]->id_participante);
+
+            $inscripcion=Inscripcion::where('participante',$id)->orderBy('curso', 'desc')->get();
+            return view('certificaciones.pagina_web._ajax_verificar')
+            ->with('participante',$participante[0])
+            ->with('inscripcion',$inscripcion);
+
+        }
+        else
+        {
+            return("No se encontraron cursos aprobados relacionados");
+
+        }
+
+    }
+
+    public function ajax_habilitar(Request $request)
     {
 
         $estado_cursos = DB::select( DB::raw("
@@ -82,7 +98,7 @@ class CertificacionesController extends Controller
 
 
             "));
-        return view('certificaciones.resp_busca_curso')->with('estado_cursos',$estado_cursos);
+        return view('certificaciones._ajax_habilitar')->with('estado_cursos',$estado_cursos);
 
     }
 
@@ -98,7 +114,7 @@ class CertificacionesController extends Controller
         //
     }
 
-    public function habilitar_entrega(Request $request)
+    public function update_habilitar(Request $request)
     {
          DB::select( DB::raw("
             update gesac.inscripciones

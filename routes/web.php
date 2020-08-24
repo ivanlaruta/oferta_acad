@@ -41,28 +41,36 @@ route::get('services',[
 		'as'   =>	'services'
 	]);
 
-Route::get('/consulta_certificados', function () {
-    return view('certificaciones.consulta_certificados');
-})->name('consulta_certificados');
+Route::get('/certificaciones.consultar', function () {
+    return view('certificaciones.pagina_web.consultar');
+})->name('certificaciones.consultar');
 
-route::get('certificaciones.habilita',[
-		'uses' =>'CertificacionesController@lista',
-		'as'   =>	'certificaciones.habilita'
+Route::get('/certificaciones.verificar', function () {
+    return view('certificaciones.pagina_web.verificar');
+})->name('certificaciones.verificar');
+
+Route::get('/certificaciones.habilitar', function () {
+    return view('certificaciones.habilitar');
+})->name('certificaciones.habilitar');
+
+route::get('certificaciones.ajax_consultar',[
+		'uses' =>'CertificacionesController@ajax_consultar',
+		'as'   =>	'certificaciones.ajax_consultar'
 	]);
 
-route::get('certificaciones.consulta',[
-		'uses' =>'CertificacionesController@consulta',
-		'as'   =>	'certificaciones.consulta'
+route::get('certificaciones.ajax_verificar',[
+		'uses' =>'CertificacionesController@ajax_verificar',
+		'as'   =>	'certificaciones.ajax_verificar'
 	]);
 
-route::get('certificaciones.busca_curso',[
-		'uses' =>'CertificacionesController@busca_curso',
-		'as'   =>	'certificaciones.busca_curso'
+route::get('certificaciones.ajax_habilitar',[
+		'uses' =>'CertificacionesController@ajax_habilitar',
+		'as'   =>	'certificaciones.ajax_habilitar'
 	]);
 
-route::get('certificaciones.habilitar_entrega',[
-		'uses' =>'CertificacionesController@habilitar_entrega',
-		'as'   =>	'certificaciones.habilitar_entrega'
+route::get('certificaciones.update_habilitar',[
+		'uses' =>'CertificacionesController@update_habilitar',
+		'as'   =>	'certificaciones.update_habilitar'
 	]);
 
 route::get('pago.res_consulta_pagos',[

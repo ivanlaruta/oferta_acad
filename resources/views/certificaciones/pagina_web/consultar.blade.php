@@ -17,13 +17,14 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Consulta</h2>
+          <h2>Disponibilidad de certificados</h2>
           
         </div>
 
         <div class="row" data-aos="fade-in">
 
           <div class="col-lg-4 mt-12 mt-lg-0 d-flex align-items-stretch">
+
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               
                 <div class="form-group">
@@ -65,7 +66,7 @@ function consulta(ci){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('certificaciones.consulta')}}",
+      url: "{{ route('certificaciones.ajax_consultar')}}",
       data: {
         ci: ci
       },

@@ -105,7 +105,7 @@ function habilitar(id_curso, fecha_impr){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('certificaciones.habilitar_entrega')}}",
+      url: "{{ route('certificaciones.update_habilitar')}}",
       data: {
         id_curso: id_curso,
         fecha_impr: fecha_impr
@@ -135,7 +135,7 @@ function habilitar(id_curso, fecha_impr){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('certificaciones.busca_curso')}}",
+      url: "{{ route('certificaciones.ajax_habilitar')}}",
       data: {
         id_curso: id_curso
       },
