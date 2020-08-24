@@ -45,24 +45,24 @@ Route::get('/consulta_certificados', function () {
     return view('certificaciones.consulta_certificados');
 })->name('consulta_certificados');
 
-route::get('Certificaciones.lista',[
+route::get('certificaciones.habilita',[
 		'uses' =>'CertificacionesController@lista',
-		'as'   =>	'Certificaciones.lista'
+		'as'   =>	'certificaciones.habilita'
 	]);
 
-route::get('Certificaciones.consulta',[
+route::get('certificaciones.consulta',[
 		'uses' =>'CertificacionesController@consulta',
-		'as'   =>	'Certificaciones.consulta'
+		'as'   =>	'certificaciones.consulta'
 	]);
 
-route::get('Certificaciones.busca_curso',[
+route::get('certificaciones.busca_curso',[
 		'uses' =>'CertificacionesController@busca_curso',
-		'as'   =>	'Certificaciones.busca_curso'
+		'as'   =>	'certificaciones.busca_curso'
 	]);
 
-route::get('Certificaciones.habilitar_entrega',[
+route::get('certificaciones.habilitar_entrega',[
 		'uses' =>'CertificacionesController@habilitar_entrega',
-		'as'   =>	'Certificaciones.habilitar_entrega'
+		'as'   =>	'certificaciones.habilitar_entrega'
 	]);
 
 route::get('pago.res_consulta_pagos',[

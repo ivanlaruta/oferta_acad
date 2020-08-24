@@ -1,6 +1,6 @@
 
 
-@extends('layouts.main')
+@extends('layouts.main_gesac')
 
 
 
@@ -11,7 +11,7 @@
 
 
 
-    <section class="pcoded-main-container">
+    <section class="pcoded-main-container" style="margin-left: 50px !important;">
 
         <div class="pcoded-wrapper">
             <div class="pcoded-content">
@@ -105,7 +105,7 @@ function habilitar(id_curso, fecha_impr){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('Certificaciones.habilitar_entrega')}}",
+      url: "{{ route('certificaciones.habilitar_entrega')}}",
       data: {
         id_curso: id_curso,
         fecha_impr: fecha_impr
@@ -135,7 +135,7 @@ function habilitar(id_curso, fecha_impr){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('Certificaciones.busca_curso')}}",
+      url: "{{ route('certificaciones.busca_curso')}}",
       data: {
         id_curso: id_curso
       },

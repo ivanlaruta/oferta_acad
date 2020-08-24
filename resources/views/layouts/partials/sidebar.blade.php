@@ -13,10 +13,10 @@
             <div class="navbar-content scroll-div">
                 <ul class="nav pcoded-inner-navbar">
                     <li class="nav-item pcoded-menu-caption">
-                        <label>Certificacioness</label>
+                        <label>Certificaciones</label>
                     </li>
                     <li class="nav-item {{ Request::routeIs('Certificaciones.lista') ? 'active' : '' }}">
-                        <a href="{{ route('Certificaciones.lista')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Habilitar entrega</span></a>
+                        <a href="{{ route('certificaciones.habilita')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Habilitar entrega</span></a>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
                         <label>Servicios</label>

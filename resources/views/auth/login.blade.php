@@ -40,7 +40,7 @@
                     </div>
                     
                     <!-- <button class="btn btn-primary shadow-2 mb-4">Login</button> -->
-                    <a href="{{ route('Certificaciones.lista')}}" class="btn btn-primary shadow-2 mb-4">Ingresar</a>
+                    <a href="{{ route('certificaciones.lista')}}" class="btn btn-primary shadow-2 mb-4">Ingresar</a>
 
                     
                 </div>

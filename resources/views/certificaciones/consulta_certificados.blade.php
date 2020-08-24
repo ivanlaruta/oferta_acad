@@ -65,7 +65,7 @@ function consulta(ci){
       type: "GET",
       cache: false,
       dataType: "html",
-      url: "{{ route('Certificaciones.consulta')}}",
+      url: "{{ route('certificaciones.consulta')}}",
       data: {
         ci: ci
       },

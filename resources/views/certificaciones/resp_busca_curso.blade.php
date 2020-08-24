@@ -37,7 +37,7 @@
                 <td>
                   @if($det->cer_impreso==1 && $det->cer_disponible!=1)
                     
-                    <!-- <a class="btn btn-success" href="{{ route('Certificaciones.habilitar_entrega',$det->id_curso)}}" role="button">Habilitar Entrega</a> -->
+                  
 
                     <a class="btn btn-success" href="javascript:habilitar({{$det->id_curso}}, {{json_encode($det->cer_fec_impresion)}});" role="button">Habilitar Entrega</a>
 
