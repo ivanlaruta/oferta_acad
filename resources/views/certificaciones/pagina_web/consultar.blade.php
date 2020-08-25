@@ -8,7 +8,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>CERTIFICACIONES</h1>
-      <p><span class="typed" data-typed-items="DIPLOMAS, CERTIFICADOS"></span></p>
+      <p><span class="typed" data-typed-items="DISPONIBILIDAD DE ENTREGA"></span></p>
     </div>
 </section>
 
@@ -17,8 +17,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Disponibilidad de certificados</h2>
-          
+          <h2>Disponibilidad de entrega de certificados</h2>
+          <small>Para el caso de cursos, los certificados se generan 14 días después de la conclusión del mismo. En el caso de diplomados dependerá de la disponibilidad de entrega del Ministerio de Educación.</small>
         </div>
 
         <div class="row" data-aos="fade-in">

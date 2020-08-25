@@ -8,7 +8,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>CERTIFICACIONES</h1>
-      <p><span class="typed" data-typed-items="DIPLOMAS, CERTIFICADOS"></span></p>
+      <p><span class="typed" data-typed-items="VERIFICACIONES"></span></p>
     </div>
 </section>
 
@@ -17,18 +17,19 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Consulta</h2>
+          <h2>Verifique la autenticidad de certificados</h2>
           
         </div>
 
         <div class="row" data-aos="fade-in">
 
           <div class="col-lg-4 mt-12 mt-lg-0 d-flex align-items-stretch">
+
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               
                 <div class="form-group">
-                  <label for="name">* Carnet de identidad</label> <small> (Por ejemplo: 5789652) </small>
-                  <input type="text" name="ci" class="form-control" id="ci" data-rule="minlen:4" data-msg="Porfavor ingrese mas de 4 valores" required="" />
+                  <label for="name">* CODIGO DE CERTIFICADO</label> <br>  <small>El codigo se encuentra en la parte superior derecha. <br> (Por ejemplo: C001234EGPP2020) </small>
+                  <input type="text" name="codigo" class="form-control" id="codigo" data-rule="minlen:4" data-msg="Porfavor ingrese mas de 4 valores" required="" />
                   <div class="validate"></div>
                 </div>
               
@@ -54,12 +55,12 @@
 var resultado = $(".resultado");
 
 function captura(){
-  ci = $('#ci').val();
-  consulta(ci);
+  codigo = $('#codigo').val();
+  consulta(codigo);
 }
   
 
-function consulta(ci){
+function consulta(codigo){
   resultado.hide();
     $.ajax({
       type: "GET",
@@ -67,7 +68,7 @@ function consulta(ci){
       dataType: "html",
       url: "{{ route('certificaciones.ajax_verificar')}}",
       data: {
-        ci: ci
+        codigo: codigo
       },
       success: function(dataResult)
       {

@@ -15,8 +15,8 @@
                     <li class="nav-item pcoded-menu-caption">
                         <label>Certificaciones</label>
                     </li>
-                    <li class="nav-item {{ Request::routeIs('Certificaciones.lista') ? 'active' : '' }}">
-                        <a href="{{ route('certificaciones.habilita')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Habilitar entrega</span></a>
+                    <li class="nav-item {{ Request::routeIs('certificaciones.habilitar') ? 'active' : '' }}">
+                        <a href="{{ route('certificaciones.habilitar')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Habilitar entrega</span></a>
                     </li>
                     <li class="nav-item pcoded-menu-caption">
                         <label>Servicios</label>

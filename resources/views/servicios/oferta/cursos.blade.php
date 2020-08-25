@@ -10,7 +10,7 @@
         <ul>
           <li class="active"><a href="{{ route('cursos')}}"><i class="bx bx-home"></i> <span>OFERTA ACADEMICA</span></a></li>
           @foreach($tipos as $det)
-            <li><a href="#{{$det->tipo_oferta_min}}"><i class="bx bx-right-arrow-alt"></i> <span>{{$det->tipo_oferta}}</span></a></li>
+            <li><a target="_parent"  href="#{{$det->tipo_oferta_min}}"><i class="bx bx-right-arrow-alt"></i> <span>{{$det->tipo_oferta}}</span></a></li>
           @endforeach
           <li><a href="https://egpp.gob.bo/"><i class="bx bx-exit"></i> <span>VOLVER A LA PAGINA WEB</span></a></li>
           

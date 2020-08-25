@@ -58,6 +58,12 @@ route::get('certificaciones.ajax_consultar',[
 		'as'   =>	'certificaciones.ajax_consultar'
 	]);
 
+
+route::get('certificaciones.ajax_verificar',[
+		'uses' =>'CertificacionesController@ajax_verificar',
+		'as'   =>	'certificaciones.ajax_verificar'
+	]);
+
 route::get('certificaciones.ajax_verificar',[
 		'uses' =>'CertificacionesController@ajax_verificar',
 		'as'   =>	'certificaciones.ajax_verificar'
