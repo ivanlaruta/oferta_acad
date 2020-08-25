@@ -4,13 +4,14 @@
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
-        <img src="{{URL::asset('img/LOGOTIPO_BLANCO.png')}}">
+        <!-- <img src="{{URL::asset('img/LOGOTIPO_BLANCO.png')}}"> -->
+        <br><br>
       </div>
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="{{ route('cursos')}}"><i class="bx bx-home"></i> <span>OFERTA ACADEMICA</span></a></li>
           @foreach($tipos as $det)
-            <li><a target="_parent"  href="#{{$det->tipo_oferta_min}}"><i class="bx bx-right-arrow-alt"></i> <span>{{$det->tipo_oferta}}</span></a></li>
+            <li><a href="#"><i class="bx bx-right-arrow-alt {{$det->tipo_oferta_min}}"></i> <span>{{$det->tipo_oferta}}</span></a></li>
           @endforeach
           <li><a href="https://egpp.gob.bo/"><i class="bx bx-exit"></i> <span>VOLVER A LA PAGINA WEB</span></a></li>
           
@@ -93,6 +94,8 @@
     </section>
 
   @endforeach
+  <div id="button">button</div>
+
   </main>
 @endsection
 
@@ -102,5 +105,11 @@
         $('.'+a).hide();
         $('.'+a+'.'+b).show();
       }; 
+
+      $("#button").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#IDIOMAS").offset().top
+          }, 2000);
+      });
   </script>
 @endsection
