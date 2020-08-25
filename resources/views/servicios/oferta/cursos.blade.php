@@ -4,15 +4,15 @@
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
-        <img src="{{URL::asset('img/LOGOTIPO_BLANCO.png')}}">
+        <!-- <img src="{{URL::asset('img/LOGOTIPO_BLANCO.png')}}"> -->
       </div>
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="{{ route('cursos')}}"><i class="bx bx-home"></i> <span>OFERTA ACADEMICA</span></a></li>
+          <!-- <li class="active"><a href="{{ route('cursos')}}"><i class="bx bx-home"></i> <span>OFERTA ACADEMICA</span></a></li> -->
           @foreach($tipos as $det)
             <li><a target="_parent" href="#{{$det->tipo_oferta_min}}"><i class="bx bx-right-arrow-alt"></i> <span>{{$det->tipo_oferta}}</span></a></li>
           @endforeach
-          <li><a href="https://egpp.gob.bo/"><i class="bx bx-exit"></i> <span>VOLVER A LA PAGINA WEB</span></a></li>
+          <!-- <li><a href="https://egpp.gob.bo/"><i class="bx bx-exit"></i> <span>VOLVER A LA PAGINA WEB</span></a></li> -->
           
         </ul>
       </nav>
@@ -21,12 +21,12 @@
     </div>
   </header>
 
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+ <!--  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>OFERTA ACADEMICA</h1>
       <p><span class="typed" data-typed-items="DIPLOMADOS, CURSOS CORTOS, CURSOS ESPECIALIZADOS, IDIOMAS"></span></p>
     </div>
-  </section>
+  </section> -->
 
   <main id="main">
   @foreach($tipos as $det_tipo)

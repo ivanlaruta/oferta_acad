@@ -6,12 +6,12 @@
 @section('content')
  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.16/b-1.5.1/b-html5-1.5.1/datatables.min.css"/>
 
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<!--   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>PAGOS</h1>
       <p><span class="typed" data-typed-items="PARTICIPANTES, PAGOS"></span></p>
     </div>
-</section>
+</section> -->
 
   <main id="">
     <section id="contact" class="contact">
