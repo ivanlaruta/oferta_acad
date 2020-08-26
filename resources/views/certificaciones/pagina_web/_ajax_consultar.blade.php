@@ -18,7 +18,7 @@
         <span><small>{{$det->rel_curso->rel_tipo->tipo_curso}}</small><br></span>
 				
 				<small><strong>Version: </strong>{{$det->rel_curso->version}}</small><br>
-				<small><strong>Inicio: </strong>{{date("d/m/Y", strtotime($det->rel_curso->fec_ini_curso))}}</small><br>
+				<!-- <small><strong>Inicio: </strong>{{date("d/m/Y", strtotime($det->rel_curso->fec_ini_curso))}}</small><br> -->
         <span style="color: #a998b6;"><small>#{{$det->rel_curso->id_curso}}</small></span>
         	</p>
         </td>
