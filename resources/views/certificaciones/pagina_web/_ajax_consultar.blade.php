@@ -13,13 +13,13 @@
     <tbody>
     @foreach($inscripcion as $det)
       <tr>
-        <td>{{$det->rel_curso->curso}}
-        	<p>
-				<small><strong>{{$det->rel_curso->rel_tipo->tipo_curso}}</strong></small><br>
-				<small><strong>{{$det->rel_curso->rel_area->area_curso}}</strong></small><br>
+        <td><h4>{{$det->rel_curso->curso}}</h4>
+				<span><small><strong>{{$det->rel_curso->rel_area->area_curso}}</strong></small><br></span>
+        <span><small>{{$det->rel_curso->rel_tipo->tipo_curso}}</small><br></span>
+				
 				<small><strong>Version: </strong>{{$det->rel_curso->version}}</small><br>
 				<small><strong>Inicio: </strong>{{date("d/m/Y", strtotime($det->rel_curso->fec_ini_curso))}}</small><br>
-        <small>#{{$det->rel_curso->id_curso}}</small>
+        <span style="color: #a998b6;"><small>#{{$det->rel_curso->id_curso}}</small></span>
         	</p>
         </td>
         <td>
@@ -33,5 +33,4 @@
     @endforeach
     </tbody>
   </table>
-
 </div>

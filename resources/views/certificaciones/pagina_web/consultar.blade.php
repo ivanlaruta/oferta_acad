@@ -5,16 +5,16 @@
 
 @section('content')
 
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<!--   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>CERTIFICACIONES</h1>
       <p><span class="typed" data-typed-items="DISPONIBILIDAD DE ENTREGA"></span></p>
     </div>
-</section>
+</section> -->
 
   <main id="">
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="" style="padding: 20px;">
 
         <div class="section-title">
           <h2>Disponibilidad de entrega de certificados</h2>
@@ -23,7 +23,7 @@
 
         <div class="row" data-aos="fade-in">
 
-          <div class="col-lg-4 mt-12 mt-lg-0 d-flex align-items-stretch">
+          <div class="col-lg-3 mt-12 mt-lg-0 d-flex align-items-stretch">
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               
@@ -38,7 +38,7 @@
           </div>
 
 
-          <div class="col-lg-7 mt-12 mt-lg-0 d-flex align-items-stretch resultado">
+          <div class="col-lg-9 mt-12 mt-lg-0 d-flex align-items-stretch resultado">
 
           </div>
 
