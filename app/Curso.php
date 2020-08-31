@@ -15,7 +15,6 @@ class Curso extends Model
     	return $this->belongsTo('App\Area','area');
     } 
 
-
 	public function rel_tipo()
     {
         return $this->belongsTo('App\Tipo','tipo');

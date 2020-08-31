@@ -36,22 +36,35 @@ class CertificacionesController extends Controller
 
    public function ajax_verificar(Request $request)
     {
+        $tipo = substr($request->codigo, 0, 1);
+        $codigo = (int)substr($request->codigo, 1, strpos($request->codigo, 'EGPP')-1);
+        $gestion= (int)substr($request->codigo,-4);
+        
+        $busqueda = DB::select( DB::raw("
+            select i.id_inscripcion
+            from gesac.inscripciones as i 
+            join gesac.cursos as c on i.curso = c.id_curso
+            join gesac.tipos_cursos as t on t.id_tipo_curso = c.tipo
+            where i.cer_codigo = ".$codigo."
+            and DATE_PART('year', i.cer_fec_impresion)=".$gestion."
+            and substring(t.tipo_curso,1,1) = '".$tipo."'
+        "));
+            // dd($busqueda);
 
-        $participante=Participante::where('ci',$request->ci)->get();
+        if(!empty($busqueda[0])){
+            $id=($busqueda[0]->id_inscripcion);
+            $inscripcion = Inscripcion::find($id);
+            // dd($inscripcion);
 
-        if(!empty($participante[0])){
-            $id=($participante[0]->id_participante);
-
-            $inscripcion=Inscripcion::where('participante',$id)->orderBy('curso', 'desc')->get();
             return view('certificaciones.pagina_web._ajax_verificar')
-            ->with('participante',$participante[0])
-            ->with('inscripcion',$inscripcion);
+            ->with('inscripcion',$inscripcion)
+            ->with('codigo',$request->codigo)
+            ;
 
-        }
+        }        
         else
         {
-            return("No se encontraron cursos aprobados relacionados");
-
+            return("Certificado no encontrado, Por favor revise que el codigo este escrito correctamente.");
         }
 
     }

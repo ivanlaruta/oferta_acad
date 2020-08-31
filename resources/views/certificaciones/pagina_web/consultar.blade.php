@@ -28,7 +28,7 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               
                 <div class="form-group">
-                  <label for="name">* Carnet de identidad</label> <small> (Por ejemplo: 5789652) </small>
+                  <label for="name">* Carnet de identidad</label><br> <small> (Por ejemplo: 5789652) </small>
                   <input type="text" name="ci" class="form-control" id="ci" data-rule="minlen:4" data-msg="Porfavor ingrese mas de 4 valores" required="" />
                   <div class="validate"></div>
                 </div>
