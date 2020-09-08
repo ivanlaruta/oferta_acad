@@ -20,11 +20,13 @@ class CertificacionesController extends Controller
         if(!empty($participante[0])){
             $id=($participante[0]->id_participante);
 
-            $inscripcion=Inscripcion::where('participante',$id)->orderBy('curso', 'desc')->get();
+            $inscripcion=Inscripcion::where('participante',$id)
+            ->where('cer_aprobado',1)
+            ->where('cer_nota_final','>',0)
+            ->orderBy('curso', 'desc')->get();
             return view('certificaciones.pagina_web._ajax_consultar')
             ->with('participante',$participante[0])
             ->with('inscripcion',$inscripcion);
-
         }
         else
         {
