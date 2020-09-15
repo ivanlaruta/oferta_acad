@@ -13,7 +13,7 @@ class PagoController extends Controller
 
     public function res_consulta_pagos()
     {
-        $detalle = Pago::select(['ci','nombre_alumno','curso','nro_factura','monto_pagado','fecha_pago']);
+        $detalle = Pago::select(['ci','nombre_alumno','curso','nro_factura','monto_pagado','fecha_pago','codigo_control']);
         // dd($detalle);
         return Datatables::of($detalle)->make(true);
     }

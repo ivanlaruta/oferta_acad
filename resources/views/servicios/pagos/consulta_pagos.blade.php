@@ -15,7 +15,7 @@
 
   <main id="">
     <section id="contact" class="contact">
-      <div class="container" style="    max-width: 90%;">
+      <div class="container" style="    max-width: 100%;">
 
         <div class="section-title">
           <h2>Consulta</h2>
@@ -29,13 +29,14 @@
                     <div class="table-responsive">
                       <table id="datatable_pago" class="table table-bordered table-hover nowrap">
                         <thead>
-                          <tr>
-                            <th>ci</th>
-                            <th>nombre_alumno</th>
-                            <th>curso</th>                            
-                            <th>nro_factura</th>                            
-                            <th>monto_pagado</th>                            
-                            <th>fecha pago</th>                            
+                          <tr style="width: 10%;">
+                            <th>Ci</th>
+                            <th>Nombre</th> 
+                            <th>Curso</th>                            
+                            <th>Factura</th>                            
+                            <th>Monto</th>                            
+                            <th>Fecha</th>                            
+                            <th>Control</th>                            
                           </tr>
                         </thead>
                         <tbody>
@@ -93,7 +94,7 @@
                   },
               },
             "dom": "Blfrtip",
-            "buttons": [ { "extend": 'copy', "text": 'Copiar' }, 'excel'],
+            "buttons": [  'excel'],
 
             "lengthMenu": [[ 25, 50, 100,-1], [ 25, 50, 100,"TODO"]],
             "processing": true,
@@ -105,7 +106,8 @@
                 {data: 'curso'},
                 {data: 'nro_factura'},
                 {data: 'monto_pagado'},
-                {data: 'fecha_pago'}
+                {data: 'fecha_pago'},
+                {data: 'codigo_control'}
             ]
         });
 

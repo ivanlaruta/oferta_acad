@@ -96,6 +96,9 @@ Route::get('test', function () {
 });
 
 
+Route::get('/cms.contacto', function () {
+    return view('cms.contacto');
+})->name('cms.contacto');
 
 
 Auth::routes();
