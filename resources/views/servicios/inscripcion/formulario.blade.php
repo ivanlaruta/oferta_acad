@@ -1113,6 +1113,8 @@
                     <p class="text-muted m-b-30">
                         Puede seleccionar una de las siguientes opciones:
                     </p>
+                    <div class="table-responsive">
+
                     <table class="table"> 
                       <tr>
                         <th>Cursos</th>
@@ -1142,6 +1144,7 @@
                         <td align="right"><label class="lbl_precios" id="lbl_precio_combo">Bs. 00</label>  </td>  
                       </tr>                    
                     </table>
+                    </div>
 
                     <div class="alert alert-info">
                       <strong>Recuerde!</strong> Para que se haga efectiva la subvención,terminado el curso el participante debe presentar el certificado de aprobación al área de recursos humanos del Ministerio de Educación, Deportes y Culturas.
@@ -1160,6 +1163,9 @@
                      <p class="text-muted m-b-30">
                         Puede seleccionar uno o varios:
                     </p>
+                    <div class="table-responsive">
+                        
+                    
                     <table class="table"> 
                       <tr>
                         <th>Cursos</th>
@@ -1226,7 +1232,7 @@
                         <td align="right"><label class="lbl_precios" id="lbl_precio_idioma2">Bs. 255</label>  </td>  
                       </tr>                    
                     </table>
-
+                    </div>
 
 
 
