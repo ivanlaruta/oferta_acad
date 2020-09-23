@@ -158,6 +158,35 @@ class CursosController extends Controller
 
     }
 
+    public function finder_cursos(Request $request)
+    {
+        $term = trim($request->q);
+
+        if (empty($term)) {
+            return \Response::json([]);
+        }
+
+        // $tags = Trf_Cliente::search($term)->limit(5)->get();
+        $tags =DB::select( DB::raw("
+           select * 
+	   				from gesac.cursos c
+			where 	
+					c.publicar = 1
+			and cast(c.fec_fin_preins as date)>=cast(now() as date)
+            and c.curso ilike '%".$term."%'
+			order by curso
+            "));
+       
+
+        $formatted_tags = [];
+
+        foreach ($tags as $tag) {
+            $formatted_tags[] = ['id' => $tag->id_curso, 'text' => $tag->curso];
+        }
+
+        return \Response::json($formatted_tags);
+    }
+
 
 
 }

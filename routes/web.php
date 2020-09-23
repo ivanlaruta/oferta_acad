@@ -96,9 +96,22 @@ Route::get('test', function () {
 });
 
 
-Route::get('/cms.contacto', function () {
-    return view('cms.contacto');
-})->name('cms.contacto');
+route::get('contacto.form',[
+		'uses' =>'ContactoController@form',
+		'as'   =>	'contacto.form'
+	]);
+
+
+route::get('inscripcion.form',[
+		'uses' =>'Servicios@form',
+		'as'   =>	'inscripcion.form'
+	]);
+
+route::get('inscripcion.form_save',[
+		'uses' =>'Servicios@form_save',
+		'as'   =>	'inscripcion.form_save'
+	]);
+
 
 
 Auth::routes();
