@@ -1143,7 +1143,7 @@
                       </tr>                    
                     </table>
 
-                    <div class="alert alert-danger">
+                    <div class="alert alert-info">
                       <strong>Recuerde!</strong> Para que se haga efectiva la subvención,terminado el curso el participante debe presentar el certificado de aprobación al área de recursos humanos del Ministerio de Educación, Deportes y Culturas.
                     </div>
                   </div>
@@ -1263,7 +1263,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Su hoja de inscripcion se le enviara en los proximos dias a su correo.
+        Gracias por inscribirse, Revisaremos su información y le enviaremos su hoja de inscripción en los próximos días. Por favor esté atento a su correo.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
