@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\InscripcionAux;
-
+use DB;
 
 
 class Servicios extends Controller
@@ -13,7 +13,13 @@ class Servicios extends Controller
     public function form()
     {
        
-        return view('servicios.inscripcion.formulario');
+       $departamentos =DB::select( DB::raw("select * from gesac.v_departamentos order by 1"));
+       $ciudades =DB::select( DB::raw("select * from gesac.v_ciudades order by 4,5"));
+       $profesiones =DB::select( DB::raw("select * from gesac.v_profesiones order by 2"));
+        return view('servicios.inscripcion.formulario')
+            ->with('departamentos',$departamentos)
+            ->with('ciudades',$ciudades)
+            ->with('profesiones',$profesiones);
 
     }
     public function form_save(Request $request)
@@ -81,6 +87,10 @@ class Servicios extends Controller
 
     }
 
-    
+    public function validar_ci(Request $request)
+    {
+        $persona= InscripcionAux::where('ci',$request->ci)->get()->toArray();
+        return ($persona);
+    }
 
 }

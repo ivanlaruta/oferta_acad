@@ -116,6 +116,10 @@ route::get('inscripcion.form_save',[
 		'as'   =>	'inscripcion.form_save'
 	]);
 
+route::get('inscripcion.validar_ci',[
+		'uses' =>'Servicios@validar_ci',
+		'as'   =>	'inscripcion.validar_ci'
+	]);
 
 
 Auth::routes();
