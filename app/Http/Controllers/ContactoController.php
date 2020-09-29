@@ -56,6 +56,26 @@ class ContactoController extends Controller
 
     }
 
+
+    public function form_save(Request $request)
+    {
+        // dd($request->all());
+        $consulta = new Contacto();
+        $consulta -> nombres = $request ->nombres;
+        $consulta -> apellidos = $request ->apellidos;
+        $consulta -> correo = $request ->correo;
+        $consulta -> celular = $request ->celular;
+        $consulta -> telefono = $request ->telefono;
+        $consulta -> id_curso = $request ->curso;
+        $consulta -> consulta = $request ->cosnulta;
+        
+        $consulta->save();
+
+    return redirect()->route('contacto.form')->with('mensaje',"Correcto.");
+    }
+
+
+
     public function index()
     {
         //

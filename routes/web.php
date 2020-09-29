@@ -101,6 +101,10 @@ route::get('contacto.form',[
 		'as'   =>	'contacto.form'
 	]);
 
+route::get('contacto.form_save',[
+		'uses' =>'ContactoController@form_save',
+		'as'   =>	'contacto.form_save'
+	]);
 
 route::get('inscripcion.form',[
 		'uses' =>'Servicios@form',

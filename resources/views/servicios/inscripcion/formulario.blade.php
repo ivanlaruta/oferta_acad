@@ -75,16 +75,7 @@
                             <option value="33">OTROS</option>
                             <option value="34">SIN DEFINIR</option>
                           </select>
-                          <!--<input type="text" style="text-transform: uppercase" class=":required form-control" name="exp_depto" id="exp_depto" placeholder="Expedido..." value="<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
 
-<h4>A PHP Error was encountered</h4>
-
-<p>Severity: Notice</p>
-<p>Message:  Array to string conversion</p>
-<p>Filename: frontend/form_inscripcion_view.php</p>
-<p>Line Number: 61</p>
-
-</div>Array">-->
                         </div>
                       </div>                      
                     </div>
@@ -639,16 +630,7 @@
                             <option value="34">SERVIDOR/A PÚBLICO</option>
                             <option value="122">SIN DEFINIR</option>
                           </select>
-                          <!--<input type="text" style="text-transform: uppercase" class="form-control" name="profesion" id="profesion" value="<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
 
-<h4>A PHP Error was encountered</h4>
-
-<p>Severity: Notice</p>
-<p>Message:  Array to string conversion</p>
-<p>Filename: frontend/form_inscripcion_view.php</p>
-<p>Line Number: 172</p>
-
-</div>Array">-->
                           </div>
                       </div>
                       <div class="col-xs-12 col-sm-4 col-md-4">
@@ -656,347 +638,11 @@
                           <label for="empresa">Empresa/Institución donde trabaja</label>
                           <select name="empresa" class="form-control" id="empresa">
                             <option value="" selected="selected">Seleccione la empresa</option>
-                            <!-- <option value="48">ADMINISTRACIÓN BOLIVIANA DE CARRETERAS</option>
-                            <option value="163">ADMINISTRACIÓN DE AEROPUERTOS Y SERVICIOS AUXILIARES A LA NAVEGACIÓN AÉREA - AASANA</option>
-                            <option value="228">ADMINISTRACIÓN DE SERVICIOS PORTUARIOS BOLIVIA</option>
-                            <option value="137">ADUANA NACIONAL DE BOLIVIA</option>
-                            <option value="408">AGENCIA BOLIVIANA DE ENERGÍA NUCLEAR</option>
-                            <option value="393">AGENCIA BOLIVIANA ESPACIAL</option>
-                            <option value="405">AGENCIA DE GOBIERNO ELECTRÓNICO Y TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN</option>
-                            <option value="407">AGENCIA DE INFRAESTRUCTURA EN SALUD Y EQUIPAMIENTO MÉDICO</option>
-                            <option value="91">AGENCIA ESTATAL DE VIVIENDA</option>
-                            <option value="17">AGENCIA NACIONAL DE HIDROCARBUROS</option>
-                            <option value="166">AGENCIA PARA EL DESARROLLO DE LAS MACRO REGIONES Y ZONAS FRONTERIZAS - ADEMAF</option>
-                            <option value="9">AGENCIA PARA EL DESARROLLO DE LA SOCIEDAD DE LA INFORMACION EN BOLIVIA - ADSIB</option>
-                            <option value="399">ARMADA BOLIVIANA</option>
-                            <option value="196">ASOCIACIÓN BOLIVIANA DE MEDICINA</option>
-                            <option value="254">ASOCIACIONES DE AGENTES DE VALORES</option>
-                            <option value="255">ASOCIACIONES DE AGRICULTORES</option>
-                            <option value="256">ASOCIACIONES DE ASEGURADORES</option>
-                            <option value="257">ASOCIACIONES DE BANCOS PRIVADOS</option>
-                            <option value="258">ASOCIACIONES DE CAÑEROS</option>
-                            <option value="259">ASOCIACIONES DE INGENIOS MINEROS</option>
-                            <option value="260">ASOCIACIONES DE INSTITUTOS, ACADEMIAS Y ESCUELAS DE PROFESIONALIZACIÓN</option>
-                            <option value="261">ASOCIACIONES DE MINEROS MEDIANOS</option>
-                            <option value="262">ASOCIACIONES DE MUNICIPIOS</option>
-                            <option value="263">ASOCIACIONES DE PERIODISTAS</option>
-                            <option value="264">ASOCIACIONES DE TRABAJADORES DE CARNE VACUNA</option>
-                            <option value="265">ASOCIACIONES FINANCIERAS</option>
-                            <option value="266">ASOCIACIONES RECAUDADORA DE DERECHO Y EJECUCIÓN PÚBLICA</option>
-                            <option value="267">ASOCIACIONES SOCIALES Y CIVICAS</option>
-                            <option value="172">ASOCIACIÓN ÑANDE BOLIVIA</option>
-                            <option value="55">AUTORIDAD BINACIONAL DEL LAGO TITICACA</option>
-                            <option value="231">AUTORIDAD DE FISCALIZACIÓN DE ELECTRICIDAD Y TECNOLOGÍA NUCLEAR</option>
-                            <option value="67">AUTORIDAD DE FISCALIZACIóN Y CONTROL DE PENSIONES Y SEGURO</option>
-                            <option value="229">AUTORIDAD DE FISCALIZACIÓN Y CONTROL SOCIAL DE AGUA POTABLE Y SANEAMIENTO</option>
-                            <option value="230">AUTORIDAD DE FISCALIZACIÓN Y CONTROL SOCIAL DE BOSQUES Y TIERRA</option>
-                            <option value="232">AUTORIDAD DE FISCALIZACIÓN Y CONTROL SOCIAL DE EMPRESAS</option>
-                            <option value="74">AUTORIDAD DE IMPUGNACIÓN TRIBUTARIA -AIT</option>
-                            <option value="16">AUTORIDAD DE REGULACION Y FISCALIZACION DE TELECOMUNICACIONES Y TRANSPORTES - ATT</option>
-                            <option value="18">AUTORIDAD DE SUPERVISION DEL SISTEMA FINANCIERO - ASFI</option>
-                            <option value="62">AUTORIDAD JURIDICCIONAL ADMINISTRATIVA MINERA</option>
-                            <option value="403">AUTORIDAD PLURINACIONAL DE LA MADRE TIERRA</option>
-                            <option value="139">AUTORIDAD Y FISCALIZACIóN Y CONTROL SOCIAL DEL JUEGO</option>
-                            <option value="177">BANCO BISA S.A.</option>
-                            <option value="85">BANCO CENTRAL DE BOLIVIA - BCB</option>
-                            <option value="397">BANCO DE CREDITO</option>
-                            <option value="118">BANCO DE DESARROLLO PRODUCTIVO - BDP</option>
-                            <option value="411">BANCO DO BRASIL S.A. SUCURSAL BOLVIA</option>
-                            <option value="390">BANCO ECONOMICO S.A.</option>
-                            <option value="143">BANCO GANADERO S.A.</option>
-                            <option value="389">BANCO LOS ANDES PROCREDIT</option>
-                            <option value="142">BANCO MERCANTIL SANTA CRUZ</option>
-                            <option value="191">BANCO NACIONAL DE BOLIVIA</option>
-                            <option value="178">BANCO SOLIDARIO</option>
-                            <option value="117">BANCO UNION S.A.</option>
-                            <option value="406">BRIGADA PARLAMENTARIA DE COCHABAMBA</option>
-                            <option value="268">BRIGADAS DE LA FUERZA AÉREA</option>
-                            <option value="63">CAJA NACIONAL DE SALUD</option>
-                            <option value="269">CAJA PETROLERA DE SALUD</option>
-                            <option value="270">CAJA SOCIAL DE LAS COORPORACIONES DE DESARROLLO - CORDESS</option>
-                            <option value="7">CAMARA DE DIPUTADOS</option>
-                            <option value="8">CAMARA DE SENADORES</option>
-                            <option value="271">CÁMARAS AGROPECUARIAS</option>
-                            <option value="272">CÁMARAS BINACIONALES</option>
-                            <option value="273">CÁMARAS HOTELERAS</option>
-                            <option value="274">CAMARAS PUBLICITARIAS</option>
-                            <option value="153">CAPACITACIÓN Y DERECHOS CIUDADANOS - CDC</option>
-                            <option value="220">CEMACO LTDA.</option>
-                            <option value="418">CENTRO DE INVESTIGACIÓN AGRÍCOLA TROPICAL</option>
-                            <option value="224">CENTRO DE NATURISMO ANDINO BOLIVIANO</option>
-                            <option value="211">CENTRO DE SALUD VIRGEN DEL ROSARIO</option>
-                            <option value="108">CENTROS DE DESARROLLO DE CAPACIDADES Y SERVICIO SOCIAL - CEDECASS</option>
-                            <option value="392">COLEGIO MILITAR GUALBERTO VILLARROEL</option>
-                            <option value="275">COLEGIOS DE ABOGADOS DE LA PAZ</option>
-                            <option value="276">COMANDO DEPARTAMENTAL</option>
-                            <option value="277">COMANDO GENERAL DE LA FUERZA AÉREA</option>
-                            <option value="278">COMANDO GENERAL DE LA FUERZA NAVAL</option>
-                            <option value="279">COMANDO GENERAL DE LA POLICÍA</option>
-                            <option value="280">COMANDO GENERAL DE LAS FUERZAS ARMADAS</option>
-                            <option value="281">COMANDO GENERAL DEL EJÉRCITO</option>
-                            <option value="282">COMITÉS CÍVICOS</option>
-                            <option value="80">CONCEJO MUNICIPAL DE COCHABAMBA</option>
-                            <option value="283">CONFEDERACIÓN DE EMPRESARIOS PRIVADOS DE BOLIVIA - CEPB</option>
-                            <option value="217">CONSEJO DEPARTAMENTAL DE MEDICINA TRADICIONAL</option>
-                            <option value="284">CONTRALORÍA GENERAL DEL ESTADO - CGE</option>
-                            <option value="146">COOPERATIVA DE TELÉFONOS LTDA. - LA PAZ</option>
-                            <option value="285">CORPORACIÓN MINERA DE BOLIVIA - COMIBOL</option>
-                            <option value="286">CORTE CONSEJO DE LA JUDICATURA</option>
-                            <option value="288">CORTES SUPERIORES DE DISTRITO</option>
-                            <option value="287">CORTE SUPREMA DE JUSTICIA</option>
-                            <option value="289">DEFENSA CIVIL</option>
-                            <option value="290">DEFENSA DEL CONSUMIDOR</option>
-                            <option value="51">DEFENSORIA DEL PUEBLO</option>
-                            <option value="291">DEPOSITOS ADUANEROS BOLIVIANOS - DAB</option>
-                            <option value="391">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH</option>
-                            <option value="14">DIMA LTDA</option>
-                            <option value="184">DIRECCION DEPARTAMENTAL DE EDUCACION</option>
-                            <option value="89">DIRECCIÓN GENERAL DE AERONAUTA CIVIL</option>
-                            <option value="401">EJERCITO DE BOLIVIA</option>
-                            <option value="186">EMBOTELLADORAS BOLIVIANAS UNIDAS - EMBOL</option>
-                            <option value="79">EMPRESA BOLIVIANA DE ALMENDRA Y DERIVADOS</option>
-                            <option value="415">Empresa Boliviana de Electricidad "ENDE CORPORACIÓN"</option>
-                            <option value="130">EMPRESA DE APOYO A LA PRODUCCIÓN DE ALIMENTO - EMAPA</option>
-                            <option value="292">EMPRESA DE CORREOS DE BOLIVIA - ECOBOL</option>
-                            <option value="160">EMPRESA ESTATAL DE TELEVISIÓN - BOLIVIATV</option>
-                            <option value="131">EMPRESA ESTATAL DE TRANSPORTE POR CABLE - MITELEFERICO</option>
-                            <option value="159">EMPRESA MUNICIPAL DE ASALTO Y VIAS - EMAVIAS</option>
-                            <option value="394">EMPRESA NACIONAL DE ELECTRICIDAD BOLIVIA</option>
-                            <option value="41">EMPRESA NACIONAL DE TELECOMUNICACIONES - ENTEL</option>
-                            <option value="170">EMPRESA NACIONAL TEXTIL - ENATEX</option>
-                            <option value="412">EMPRESA PÚBLICA NACIONAL ESTRATÉGICA BOLIVIANA DE AVIACIÓN - BOA</option>
-                            <option value="83">EMPRESA PÚBLICA PRODUCTIVA LACTEOS DE BOLIVIA - LACTEOSBOL</option>
-                            <option value="179">EMPRESA PÚBLICA QUIPUS</option>
-                            <option value="15">ESCUELA DE GESTION PUBLICA PLURINACIONAL</option>
-                            <option value="152">ESCUELA DE JUECES DEL ESTADO</option>
-                            <option value="404">ESCUELA INDUSTRIAL SUPERIOR PEDRO DOMINGO MURILLO</option>
-                            <option value="135">ESCUELA LATINOAMERICANA DE MEDICINA</option>
-                            <option value="162">ESCUELA MILITAR DE INGENIERIA - EMI</option>
-                            <option value="123">ESCUELA SUPERIOR DE FORMACIÓN DE MAESTROS FRANZ TAMAYO</option>
-                            <option value="82">ESCUELA SUPERIOR DE FORMACIÓN DE MAESTROS SIMÓN BOLIVAR</option>
-                            <option value="398">FEDERACIÓN DE TRABAJADORES DE LA PRENSA</option>
-                            <option value="293">FEDERACIONES DE COOPERATIVAS DE TELECOMUNICACIONES</option>
-                            <option value="294">FEDERACIONES DE GANADEROS</option>
-                            <option value="295">FEDERACIONES DE LA MICRO Y PEQUEÑA EMPRESA</option>
-                            <option value="298">FEDERACIONES DEPORTIVAS</option>
-                            <option value="296">FEDERACIONES DE PROFESIONALES</option>
-                            <option value="297">FEDERACIONES DE TRABAJADORAS DEL HOGAR</option>
-                            <option value="299">FEDERACIONES EMPRESARIALES DEPARTAMENTALES</option>
-                            <option value="300">FEDERACIONES MINERAS</option>
-                            <option value="301">FISCALIA GENERAL</option>
-                            <option value="302">FISCALÍAS DE DISTRITO</option>
-                            <option value="388">FONDO DE DESARROLLO INDIGENA</option>
-                            <option value="303">FONDO NACIONAL DE DESARROLLO REGIONAL - FNDR</option>
-                            <option value="304">FONDO NACIONAL DE INVERSIÓN PRODUCTIVA Y SOCIAL - FPS</option>
-                            <option value="400">FUERZA AEREA BOLIVIANA</option>
-                            <option value="161">FUNDACIÓN PRO MUJER</option>
-                            <option value="305">FUNDEMPRESA</option>
-                            <option value="49">GACETA OFICIAL DE BOLIVIA</option>
-                            <option value="233">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE BENI</option>
-                            <option value="234">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE CHUQUISACA</option>
-                            <option value="105">GOBIERNO AUTONOMO DEPARTAMENTAL DE COCHABAMBA</option>
-                            <option value="5">GOBIERNO AUTONOMO DEPARTAMENTAL DE  LA PAZ</option>
-                            <option value="57">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE ORURO</option>
-                            <option value="235">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE PANDO</option>
-                            <option value="236">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE POTOSÍ</option>
-                            <option value="237">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE SANTA CRUZ</option>
-                            <option value="81">GOBIERNO AUTÓNOMO DEPARTAMENTAL DE TARIJA</option>
-                            <option value="402">GOBIERNO AUTÓNOMO MUNICIPAL DE EL ALTO</option>
-                            <option value="419">GOBIERNO AUTÓNOMO MUNICIPAL DE LA PAZ </option>
-                            <option value="6">GOBIERNOS AUTÓNOMOS MUNICIPALES DE CIUDADES CAPITALES</option>
-                            <option value="124">GOBIERNOS AUTÓNOMOS MUNICIPALES RURALES</option>
-                            <option value="13">HIGH TECHNOLOGIES</option>
-                            <option value="225">HOSPITAL DANIEL BRACAMONTE</option>
-                            <option value="188">HOSPITAL GENERAL SAN JUAN DE DIOS</option>
-                            <option value="120">HOSPITAL GINECO OBSTETRICO NEONATAL</option>
-                            <option value="212">HOSPITAL LEO SCHWARZ</option>
-                            <option value="116">HOSPITAL MUNICIPAL DE VIACHA</option>
-                            <option value="213">HOSPITAL NICOLAS ORTIZ</option>
-                            <option value="195">HOSPITAL SAN ROQUE</option>
-                            <option value="208">HOSPITAL TOMINA</option>
-                            <option value="144">HOSPITAL UNIVERSITARIO JAPONÉS</option>
-                            <option value="306">INSTITUCIONES DE SERVICIOS DE LAS FFAA</option>
-                            <option value="77">INSTITUTO BOLIIANO DE METROLOGIA - IBMETRO</option>
-                            <option value="72">INSTITUTO BOLIVIANO DE CEGUERA - IBCBOLIVIA</option>
-                            <option value="132">INSTITUTO DE CAPACITACIÓN DEL ORIENTE - ICO</option>
-                            <option value="70">INSTITUTO DEL SEGURO AGRARIO - INSA</option>
-                            <option value="42">INSTITUTO NACIONAL DE ESTADÍSTICA - INE</option>
-                            <option value="75">INSTITUTO NACIONAL DE REFORMA AGRARIA - INRA</option>
-                            <option value="73">INSTITUTO NACIONAL DE SALUD OCUPACIONAL - INSO</option>
-                            <option value="387">INSTITUTO NACIONAL DE SEGUROS DE SALUD</option>
-                            <option value="113">INSTITUTO POLITECNICO TUPAK KATARI</option>
-                            <option value="307">INSTITUTOS DE FORMACIÓN POLICIAL</option>
-                            <option value="308">INSTITUTOS MILITARES DE LA FUERZA AÉREA</option>
-                            <option value="309">INSTITUTOS MILITARES DE LA FUERZA NAVAL</option>
-                            <option value="310">INSTITUTOS MILITARES DEL EJÉRCITO</option>
-                            <option value="190">INSTITUTO SUPERIOR JESÚS MARIA I</option>
-                            <option value="187">INSTITUTO SUPERIOR JESÚS MARIA II</option>
-                            <option value="150">INSTITUTO SUPERIOR SANTO TORIBIO DE MOGROVEJO - ISEIT</option>
-                            <option value="175">INSTITUTO TECNOLOGICO DON BOSCO</option>
-                            <option value="198">KALLAWAYAS SIN FRONTERAS - KASFRO</option>
-                            <option value="395">KURMI - APOYO AL DESARROLLO SOSTENIBLE INTERANDINO</option>
-                            <option value="174">LINEA AEREA ECOJET S.A.</option>
-                            <option value="121">MAGISTERIO DE BOLIVIA</option>
-                            <option value="311">MINISTERIO DE AUTONOMÍA</option>
-                            <option value="312">MINISTERIO DE COMUNICACIÓN</option>
-                            <option value="43"> MINISTERIO DE CURLTURAS Y TURISMO</option>
-                            <option value="114">MINISTERIO DE DEFENSA DEL ESTADO PLURINACIONAL DE BOLIVIA - MINDEF</option>
-                            <option value="313">MINISTERIO DE DEFENSA LEGAL DEL ESTADO</option>
-                            <option value="45">MINISTERIO DE DESARROLLO PRODUCTIVO Y ECONOMÍA PLURAL - MDPYEP</option>
-                            <option value="180">MINISTERIO DE DESARROLLO RURAL Y TIERRAS</option>
-                            <option value="50">MINISTERIO DE ECONOMÍA Y FINANZAS PÚBLICAS</option>
-                             --><option value="1">MINISTERIO DE EDUCACION - MINEDU</option>
-                            <!-- <option value="129">MINISTERIO DE ENERGIAS</option>
-                            <option value="314">MINISTERIO DE GOBIERNO</option>
-                            <option value="410">MINISTERIO DE HIDROCARBUROS</option>
-                            <option value="96">MINISTERIO DE JUSTICIA Y TRANSPARENCIA INSTITUCIONAL</option>
-                            <option value="4">MINISTERIO DE LA PRESIDENCIA</option>
-                            <option value="138">MINISTERIO DE MEDIO AMBIENTE Y AGUAS</option>
-                            <option value="315">MINISTERIO DE MINERÍA Y METALURGIA</option>
-                            <option value="2">MINISTERIO DE OBRAS PUBLICAS, SERVICIOS  Y VIVIENDA - MOPSV</option>
-                            <option value="54">MINISTERIO DE PLANIFICACIÓN DEL DESARROLLO</option>
-                            <option value="92">MINISTERIO DE RELACIONES EXTERIORES</option>
-                            <option value="44">MINISTERIO DE SALUD Y DEPORTES</option>
-                            <option value="66">MINISTERIO DE TRABAJO, EMPLEO Y PREVISIÓN SOCIAL</option>
-                            <option value="61">MINISTERIO DE TRANSPARENCIA INSTITUCIONAL Y LUCHA CONTRA LA CORRUPCIÓN</option>
-                            <option value="0">NO CUENTA CON EMPRESA/INSTITUCION</option>
-                            <option value="316">NOTARIAS DE FE PÚBLICA</option>
-                            <option value="318">ORGANISMOS DE ASESORAMIENTO Y APOYO</option>
-                            <option value="319">ORGANISMOS DESCENTRALIZADOS</option>
-                            <option value="320">ORGANISMOS INTERNACIONALES</option>
-                            <option value="321">ORGANISMOS NO GUBERNAMENTALES (ONGS)</option>
-                            <option value="322">ORGANISMOS OPERATIVOS</option>
-                            <option value="156">ORGANIZACIÓN DE MUJERES AYMARAS DEL KOLLASUYO - OMAK</option>
-                            <option value="323">ORGANIZACIONES CAMPESINAS E INDÍGENAS</option>
-                            <option value="324">ORGANIZACIONES FOLKLÓRICAS Y MUSICALES FRATERNIDADES Y COMPARSAS</option>
-                            <option value="325">ORGANIZACIONES TERRITORIALES DE BASE (OTBS)</option>
-                            <option value="157">ORGANO JUDICIAL DE BOLIVIA</option>
-                            <option value="90">OTROS</option>
-                            <option value="167">POLICIA BOLIVIANA</option>
-                            <option value="326">PRESIDENCIA DEL ESTADO</option>
-                            <option value="12">PROCURADURÍA GENERAL DEL ESTADO</option>
-                            <option value="327">PROGRAMA NACIONAL DE SEMILLAS - PNS</option>
-                            <option value="10">PROGRAMA PARA EL DESARROLLO DE LAS NACIONES UNIDAS EN BOLIVIA</option>
-                            <option value="78">PROMIEL</option>
-                            <option value="169">PROMUEVE BOLIVIA</option>
-                            <option value="416">RADIO COMUNITARIA/RADIO PUEBLO ORIGINARIO</option>
-                            <option value="53">REGISTRO INTERNACIONAL BOLIVIANO DE BUQUES</option>
-                            <option value="94">REGISTRO UNICO PARA LA ADMINISTRACIÓN TRIBUTARÍA</option>
-                            <option value="104">SERVICIO DE DESARROLLO DE LAS EMPRESAS PÚBLICAS PRODUCTIVAS - SEDEM</option>
-                            <option value="52">SERVICIO DE IMPUESTOS NACIONALES - SIN</option>
-                            <option value="59">SERVICIO DEPARTAMENTAL DE SALUD</option>
-                            <option value="328">SERVICIO DE REGISTRO CIVIL - SERECI</option>
-                            <option value="145">SERVICIO ESTATAL DE AUTONOMÍAS - SEA</option>
-                            <option value="164">SERVICIO GENERAL DE IDENTIFICACIÓN PERSONAL - SEGIP</option>
-                            <option value="332">SERVICIO NACIONAL DEL SISTEMA DE REPARTO - SENASIR</option>
-                            <option value="69">SERVICIO NACIONAL DEL SISTEMA DE REPARTO - SENASIR</option>
-                            <option value="329">SERVICIO NACIONAL DE MIGRACIÓN - SENAMIG</option>
-                            <option value="133">SERVICIO NACIONAL DE PATRIMONIO DEL ESTADO - SENAPE</option>
-                            <option value="84">SERVICIO NACIONAL DE PROPIEDAD INTELECTUAL - SENAPI</option>
-                            <option value="409">SERVICIO NACIONAL DE REGISTRO Y CONTROL DE LA COMERCIALIZACIÓN DE MINERALES Y METALES</option>
-                            <option value="330">SERVICIO NACIONAL DE SANIDAD AGROPECUARIA E INOCUIDAD ALIMENTARIA - SENASAG</option>
-                            <option value="331">SERVICIO NACIONAL DE VERIFICACIÓN DE EXPORTACIONES - SENAVEX</option>
-                            <option value="119">SERVICIO NACIONAL PARA LA SOSTENIBILIDAD DE SERVICIOS EN SANEAMIENTO BÁSICO - SENASBA</option>
-                            <option value="413">SERVICIO NACIONAL TEXTIL-SENATEX</option>
-                            <option value="386">SINDEFINIR</option>
-                            <option value="199">SOCIEDAD BOLIVIANA DE MEDICINA TRADICIONAL - SOBOMETRA</option>
-                            <option value="333">SOCIEDADES DE INGENIEROS - SIB</option>
-                            <option value="334">TELEFONÍA Y TELECOMUNICACIONES</option>
-                            <option value="417">TRANSPORTE AEREO MILITAR </option>
-                            <option value="47">TRIBUNAL CONSTITUCIONAL PLURINACIONAL - TCP</option>
-                            <option value="414">TRIBUNAL DEPARTAMENTAL DE JUSTICIA - ORURO</option>
-                            <option value="317">TRIBUNALES ELECTORALES DEPARTAMENTALES</option>
-                            <option value="165">TRIBUNAL SUPREMO ELECTORAL - OEP</option>
-                            <option value="11">UNICEF BOLIVIA</option>
-                            <option value="97">UNIDAD DE INVESTIGACIONES FINANCIERAS - UIF</option>
-                            <option value="197">UNIDAD DE MEDICINA TRADICIONAL E INTERCULTURALIDAD - UNIMETRA</option>
-                            <option value="76">UNIDAD EJECUTORA DE LUCHA INTEGRAL CONTRA EL NARCOTRAFICO - UELICN</option>
-                            <option value="65">UNIDADES EDUCATIVAS</option>
-                            <option value="247">UNIVERSIDAD AMAZÓNICA DE PANDO - UADP</option>
-                            <option value="243">UNIVERSIDAD AUTÓNOMA GABRIEL RENÉ MORENO - UAGRM</option>
-                            <option value="173">UNIVERSIDAD AUTÓNOMA JUAN MISAEL SARACHO - UAJMS</option>
-                            <option value="248">UNIVERSIDAD CATÓLICA BOLIVIANA SAN PABLO - UCSP</option>
-                            <option value="250">UNIVERSIDAD DE AQUINO BOLIVIA - UDABOL</option>
-                            <option value="396">UNIVERSIDAD INDIGENA BOLIVIANA AYMARA - TUPAK KATARI</option>
-                            <option value="252">UNIVERSIDAD LA SALLE - UNIVSA</option>
-                            <option value="253">UNIVERSIDAD LOYOLA</option>
-                            <option value="241">UNIVERSIDAD MAYOR DE SAN ANDRÉS - UMSA</option>
-                            <option value="242">UNIVERSIDAD MAYOR DE SAN SIMÓN - UMSS</option>
-                            <option value="110">UNIVERSIDAD MAYOR REAL Y PONTIFICIA SAN FRANCISCO XAVIER - USFX</option>
-                            <option value="246">UNIVERSIDAD NACIONAL SIGLO XX - UNSXX</option>
-                            <option value="251">UNIVERSIDAD NUR - NUR</option>
-                            <option value="249">UNIVERSIDAD PRIVADA DEL VALLE - UNIVALLE</option>
-                            <option value="147">UNIVERSIDAD PÚBLICA EL ALTO - UPEA</option>
-                            <option value="245">UNIVERSIDAD TÉCNICA DEL BENI - UTBN</option>
-                            <option value="60">UNIVERSIDAD TÉCNICA DE ORURO - UTO</option>
-                            <option value="244">UNIVERSIDAD TOMÁS FRIAS - UTF</option>
-                            <option value="336">VICEMIN. DE AGUA POTABLE Y SANEAMIENTO BÁSICO</option>
-                            <option value="337">VICEMIN. DE AUTONOMÍA</option>
-                            <option value="338">VICEMIN. DE CIENCIA Y TECNOLOGÍA</option>
-                            <option value="339">VICEMIN. DE COCA Y DESARROLLO INTEGRAL</option>
-                            <option value="171">VICEMIN. DE COMERCIO INTERNO Y EXPORTACION - VCE</option>
-                            <option value="340">VICEMIN. DE COOPERATIVAS MINERAS</option>
-                            <option value="335">VICEMIN. DE COORD. CON MOVIMIENTOS SOCIALES Y SOCIEDAD CIVIL</option>
-                            <option value="341">VICEMIN. DE COORDINACIÓN GESTION GUBERNAMENTAL Y TERRITORIAL</option>
-                            <option value="342">VICEMIN. DE DEFENSA CIVIL</option>
-                            <option value="343">VICEMIN. DE DEFENSA DE LOS DERECHOS DEL USUARIO Y CONSUMIDOR</option>
-                            <option value="344">VICEMIN. DE DEFENSA LEGAL DEL ESTADO</option>
-                            <option value="345">VICEMIN. DE DEFENSA SOCIAL Y SUSTANCIAS CONTROLADAS</option>
-                            <option value="346">VICEMIN. DE DEFENSA Y COOPERACIÓN AL DESARROLLO INTEGRAL</option>
-                            <option value="347">VICEMIN. DE DEPORTES</option>
-                            <option value="348">VICEMIN. DE DESARROLLO ENERGÉTICO - VMDE</option>
-                            <option value="349">VICEMIN. DE DESARROLLO PRODUCTIVO MINERO METALÚRGICO</option>
-                            <option value="148">VICEMIN. DE DESARROLLO RURAL Y AGROPECUARIO</option>
-                            <option value="350">VICEMIN. DE DESCOLONIZACIÓN</option>
-                            <option value="351">VICEMIN. DE EDUCACIÓN ALTERNATIVA Y ESPECIAL</option>
-                            <option value="352">VICEMIN. DE EDUCACIÓN REGULAR</option>
-                            <option value="353">VICEMIN. DE EDUCACIÓN SUPERIOR DE FORMACIÓN PROFESIONAL</option>
-                            <option value="354">VICEMIN. DE ELECTRICIDAD Y ENERGÍAS ALTERNATIVAS - VMEEA</option>
-                            <option value="355">VICEMIN. DE EMPLEO, SERVICIO CIVIL Y COOPERATIVAS</option>
-                            <option value="356">VICEMIN. DE EXPLORACIÓN Y EXPLOTACIÓN DE HIDROCARBUROS - VMEEH</option>
-                            <option value="357">VICEMIN. DE GESTIÓN INSTITUCIONAL</option>
-                            <option value="358">VICEMIN. DE IGUALDAD DE OPORTUNIDADES</option>
-                            <option value="359">VICEMIN. DE INTERCULTURALIDAD</option>
-                            <option value="360">VICEMIN. DE INVERSIÓN PÚBLICA Y FINANCIAMIENTO EXTERNO</option>
-                            <option value="361">VICEMIN. DE JUSTICIA INDÍGENA ORIGINARIO CAMPESINA</option>
-                            <option value="362">VICEMIN. DE JUSTICIA Y DERECHOS FUNDAMENTALES</option>
-                            <option value="363">VICEMIN. DE LA INDUSTRIA DEL TURISMO</option>
-                            <option value="385">VICEMIN. DEL TESORO Y CRÉDITO PUBLICO</option>
-                            <option value="364">VICEMIN. DE LUCHA CONTRA LA CORRUPCIÓN</option>
-                            <option value="365">VICEMIN. DE MEDIO AMBIENTE, BIODIVERSIDAD Y CAMBIOS CLIMÁTICOS</option>
-                            <option value="168">VICEMIN. DE MICRO Y PEQUEÑA EMPRESA</option>
-                            <option value="366">VICEMIN. DE PENSIONES Y SERVICIOS FINANCIEROS</option>
-                            <option value="367">VICEMIN. DE PLANIFICACIÓN ESTRATÉGICA DEL ESTADO</option>
-                            <option value="368">VICEMIN. DE PLANIFICACIÓN Y COORDINACIÓN</option>
-                            <option value="369">VICEMIN. DE POLÍTICA MINERA, REGULACIÓN Y FISCALIZACIÓN</option>
-                            <option value="370">VICEMIN. DE POLÍTICA TRIBUTARIA</option>
-                            <option value="371">VICEMIN. DE PRESUPUESTO Y CONTABILIDAD FISCAL</option>
-                            <option value="372">VICEMIN. DE PREVENCIÓN, PROMOCIÓN DE ÉTICA Y TRANSPARENCIA</option>
-                            <option value="373">VICEMIN. DE PRODUCCIÓN INDUSTRIAL A MEDIANA Y GRAN ESCALA</option>
-                            <option value="374">VICEMIN. DE RECURSOS HÍDRICOS Y RIEGO</option>
-                            <option value="375">VICEMIN. DE RÉGIMEN INTERIOR Y POLICÍA</option>
-                            <option value="376">VICEMIN. DE RELACIONES ECONÓMICAS Y COMERCIO EXTERIOR</option>
-                            <option value="377">VICEMIN. DE RELACIONES EXTERIORES</option>
-                            <option value="378">VICEMIN. DE SALUD Y PROMOCIÓN</option>
-                            <option value="379">VICEMIN. DE SEGURIDAD CIUDADANA</option>
-                            <option value="380">VICEMIN. DE TELECOMUNICACIONES</option>
-                            <option value="381">VICEMIN. DE TIERRAS</option>
-                            <option value="382">VICEMIN. DE TRABAJO Y PREVISIÓN SOCIAL</option>
-                            <option value="383">VICEMIN. DE TRANSPORTES</option>
-                            <option value="384">VICEMIN. DE VIVIENDA</option>
-                            <option value="3">VICE PRESIDENCIA DEL ESTADO</option>
-                            <option value="134">YACIMIENTOS PETROLÍFEROS FISCALES BOLIVIANOS - YPFB</option> -->
+                            
+                            <option value="1">MINISTERIO DE EDUCACION - MINEDU</option>
+                            
                           </select>
-                          <!--<input type="text" style="text-transform: uppercase" class="form-control" name="empresa" id="empresa" value="<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
 
-<h4>A PHP Error was encountered</h4>
-
-<p>Severity: Notice</p>
-<p>Message:  Array to string conversion</p>
-<p>Filename: frontend/form_inscripcion_view.php</p>
-<p>Line Number: 179</p>
-
-</div>Array">-->
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-4 col-md-4">
@@ -1122,33 +768,49 @@
                       </tr>
                       <tr>
                         <td>
-                          <div class="custom-control custom-checkbox">
+                          <!-- <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="ch_idioma1" name="check[]" value="idioma_subv" onclick="calc();">
                             <label class="custom-control-label" for="ch_idioma1">IDIOMA ORIGINARIO</label>
                             <select class="form-control"  id="select_idioma1" name="select_idioma1">
                               <option value="Aimara">Aimara</option>
                               <option value="Quechua">Quechua</option>
                             </select>
+                          </div> -->
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input mi_check" id="ch_ofimatica" name="check[]" value="ofimatica_subv">
+                            <label class="custom-control-label" for="ch_ofimatica">OFIMATICA</label>
+                            
                           </div>
                         </td> 
-                        <td align="right"><label class="lbl_precios" id="lbl_precio_idioma1">Bs. 00</label>  </td>  
+                        <!-- <td align="right"><label class="lbl_precios" id="lbl_precio_idioma1">Bs. 00</label>  </td>   -->
+                        <td align="right"><label class="lbl_precios" id="lbl_ofimatica">Bs. 00</label>  </td>  
 
                       </tr>
                       <tr>  
                         <td>
-                          <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="ch_combo" name="check[]" value="combo_subv">
+                          <!-- <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input mi_check" id="ch_combo" name="check[]" value="combo_subv">
                               <label class="custom-control-label" for="ch_combo">- LEY 004 <br>- RESPONSABILIDAD POR LA FUNCION PUBLICA</label>
+                          </div> -->
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input mi_check" id="ch_combo2" name="check[]" value="combo2_subv">
+                              <label class="custom-control-label" for="ch_combo2">- PREVENCIÓN DE LA VIOLENCIA <br>- RELACIONES HUMANAS</label>
                           </div>
                         </td>
-                        <td align="right"><label class="lbl_precios" id="lbl_precio_combo">Bs. 00</label>  </td>  
+                        <!-- <td align="right"><label class="lbl_precios" id="lbl_precio_combo">Bs. 00</label>  </td>   -->
+                        <td align="right"><label class="lbl_precios" id="lbl_precio_combo2">Bs. 00</label>  </td>  
                       </tr>                    
                     </table>
                     </div>
 
-                    <div class="alert alert-info">
-                      <strong>Recuerde!</strong> Para que se haga efectiva la subvención,terminado el curso el participante debe presentar el certificado de aprobación al área de recursos humanos del Ministerio de Educación, Deportes y Culturas.
+                    
+                    <div class="alert alert-dark" role="alert">
+                       <strong>Recuerde!</strong> Para que se haga efectiva la subvención,terminado el curso el participante debe presentar el certificado de aprobación al área de recursos humanos del Ministerio de Educación, Deportes y Culturas.
                     </div>
+
+
+
+
                   </div>
                 </div>  
               </div>
@@ -1174,7 +836,7 @@
                       <tr>
                         <td>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ch_violencia" name="check[]" value="violencia">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_violencia" name="check[]" value="violencia">
                                 <label class="custom-control-label" for="ch_violencia">PREVENCIÓN DE LA VIOLENCIA</label>
                             </div>
                         </td> 
@@ -1183,7 +845,7 @@
                       <tr>  
                         <td>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ch_1178" name="check[]" value="1178">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_1178" name="check[]" value="1178">
                                 <label class="custom-control-label" for="ch_1178">LEY Nº 1178</label>
                             </div>
                         </td>
@@ -1192,7 +854,7 @@
                       <tr>  
                         <td>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ch_pp" name="check[]" value="pp">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_pp" name="check[]" value="pp">
                                 <label class="custom-control-label" for="ch_pp">POLÍTICAS PÚBLICAS</label>
                             </div>
                         </td>
@@ -1201,7 +863,7 @@
                       <tr>  
                         <td>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ch_004" name="check[]" value="004">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_004" name="check[]" value="004">
                                 <label class="custom-control-label" for="ch_004">LEY 004</label>
                             </div>
                         </td>
@@ -1210,7 +872,7 @@
                       <tr>  
                         <td>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ch_responsabilidad" name="check[]" value="responsabilidad">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_responsabilidad" name="check[]" value="responsabilidad">
                                 <label class="custom-control-label" for="ch_responsabilidad">RESPONSABILIDAD POR LA FUNCION PUBLICA</label>
                             </div>
                         </td>
@@ -1221,7 +883,7 @@
                       <tr>  
                         <td>
                             <div class="custom-control custom-checkbox div_idioma2">
-                                <input type="checkbox" class="custom-control-input" id="ch_idioma2" name="check[]" value="idioma_desc">
+                                <input type="checkbox" class="custom-control-input mi_check" id="ch_idioma2" name="check[]" value="idioma_desc">
                                 <label class="custom-control-label" for="ch_idioma2">IDIOMA ORIGINARIO</label>
                                 <select class="form-control "  data-width="50%" id="select_idioma2" name="select_idioma2">
                                     <option value="Aimara">Aimara</option>
@@ -1311,8 +973,7 @@ var monto3=255.0;
     inicio();
 
     function inicio() {
-        $("#ch_combo").prop("checked", false);
-        $("#ch_idioma1").prop("checked", false);
+        $(".mi_check").prop("checked", false);
         $("#select_idioma1").attr("disabled", true);
         $(".lbl_precios").hide();
         document.getElementById('precio_fin').innerHTML = 'Bs.0';
@@ -1326,6 +987,27 @@ var monto3=255.0;
     function habilita_combo() {
         $("#lbl_precio_combo").show();
     };
+
+
+    function deshabilita_combo2() {
+        $("#ch_combo2").prop("checked", false);
+        $("#lbl_precio_combo2").hide();
+    };
+
+    function habilita_combo2() {
+        $("#lbl_precio_combo2").show();
+    };
+
+    function habilita_ofimatica_subv() {
+        
+        $("#lbl_ofimatica").show();
+    };
+
+    function deshabilita_ofimatica_subv() {
+        $("#ch_ofimatica").prop("checked", false);
+        $("#lbl_ofimatica").hide();
+    };
+
 
     function habilita_idioma_subv() {
         $("#select_idioma1").removeAttr("disabled");
@@ -1370,6 +1052,7 @@ var monto3=255.0;
     }; 
 
     function deshabilita_violencia() {
+        $("#ch_violencia").prop("checked", false);
         $("#lbl_precio_violencia").hide();
     };
 
@@ -1408,6 +1091,19 @@ $('#ch_idioma1').click(function() {
 
 });
 
+// OFIMATICA SUBVENCION
+
+$('#ch_ofimatica').click(function() {
+  if ($(this).is(':checked')) {
+    habilita_ofimatica_subv();
+    deshabilita_combo2();
+  }
+  else{
+    deshabilita_ofimatica_subv();
+  }
+});
+
+
 // COMBO
 $('#ch_combo').click(function() {
   if ($(this).is(':checked')) {
@@ -1427,9 +1123,30 @@ $('#ch_combo').click(function() {
   }
 });
 
+
+
+// COMBO2
+$('#ch_combo2').click(function() {
+  if ($(this).is(':checked')) {
+    if ($('#ch_violencia').is(':checked')) {
+         calc_precio(monto1,'rest');
+      }
+  
+    habilita_combo2();
+    deshabilita_ofimatica_subv(); 
+    deshabilita_violencia();
+  }
+  else{
+    deshabilita_combo2();
+  }
+});
+
+
+
 $('#ch_violencia').click(function() {
   if ($(this).is(':checked')) {
     habilita_violencia();
+    deshabilita_combo2();
     calc_precio(monto1,'sum');
   }
   else{
@@ -1437,6 +1154,8 @@ $('#ch_violencia').click(function() {
     calc_precio(monto1,'rest');
   }
 });
+
+
 
 $('#ch_1178').click(function() {
   if ($(this).is(':checked')) {
