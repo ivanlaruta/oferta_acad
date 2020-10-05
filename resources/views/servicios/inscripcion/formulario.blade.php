@@ -291,8 +291,11 @@
 
                               <optgroup label="UNIDADES QUE NO DEPENDEN DE DIRECCIONES.">
                                 <option value="Unidades que no dependen de direcciones.">unidades que no dependen de direcciones.</option>
-                                <option value="Sistema Plurinacional de Certificados de Competencias.">Sistema Plurinacional de Certificados de Competencias.</option>
-                               
+                                <option value="Sistema Plurinacional de Certificados de Competencias.">Sistema Plurinacional de Certificados de Competencias.</option>                      
+                              </optgroup>
+
+                              <optgroup label="UNIDAD DE TITULOS.">
+                                <option value="Unidad de Titulos.">Unidad de Titulos.</option>
                               </optgroup>
                               
     
