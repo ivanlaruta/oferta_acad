@@ -176,7 +176,7 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                           <label for="profesion">Profesión</label>
                           <select name="profesion" class="form-control" id="profesion">
@@ -189,7 +189,7 @@
 
                           </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                           <label for="empresa">Empresa/Institución donde trabaja</label>
                           <select name="empresa" class="form-control" id="empresa">
@@ -201,56 +201,146 @@
 
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4">
+
+                      <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <label for="unidad">Unidad</label>
+                          <select name="unidad" class="form-control" id="unidad">
+                            <option value="" selected="selected">Seleccione su unidad</option>
+                            
+                              <optgroup label="Despacho del Ministro de Educación, Deportes y Culturas.">
+                                <option value="Jefatura de Gabinete">Jefatura de Gabinete</option>
+                                <option value="Unidad de Transparencia">Unidad de Transparencia</option>
+                                <option value="Unidad De Comunicación Social">Unidad De Comunicación Social</option>
+                                <option value="Unidad De Auditoría interna">Unidad De Auditoría interna</option>
+                              </optgroup>
+                              <optgroup label="Despacho del Ministro de Educación, Deportes y Culturas.">
+                                <option value="Unidad Financiera">Unidad Financiera</option>
+                                <option value="Unidad  Administrativa">Unidad  Administrativa</option>
+                                <option value="URRHHyDO">URRHHyDO</option>
+                                <option value="Unidad de Gestión de Perrsonal del SEP">Unidad de Gestión de Perrsonal del SEP</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Asuntos Jurídicos (DGAJ).">
+                                <option value="Unidad de Análisis Jurídico">Unidad de Análisis Jurídico</option>
+                                <option value="Unidad de Gestión Jurídica">Unidad de Gestión Jurídica</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Planificación (DGP).">
+                                <option value="Unidad de Políticas de Intraculturalidad, Interculturalidad y Plurilingüismo">Unidad de Políticas de Intraculturalidad, Interculturalidad y Plurilingüismo</option>
+                                <option value="Unidad de Sistemas">Unidad de Sistemas</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación Primaria.">
+                                <option value="Dirección General de Educación Primaria.">Dirección General de Educación Primaria.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación Secundaria.">
+                                <option value="Dirección General de Educación Secundaria.">Dirección General de Educación Secundaria.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación de Adultos.">
+                                <option value="Dirección General de Educación de Adultos.">Dirección General de Educación de Adultos.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación Especial.">
+                                <option value="Dirección General de Educación Especial.">Dirección General de Educación Especial.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Post Alfabetización.">
+                                <option value="Unidad Ejecutora del Programa de Postalfabetización">Unidad Ejecutora del Programa de Postalfabetización</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación Superior Técnica Tecnológica, Lingüística y Artística (DGESTTLA).">
+                                <option value="Dirección General de Educación Superior Técnica Tecnológica, Lingüística y Artística (DGESTTLA).">Dirección General de Educación Superior Técnica Tecnológica, Lingüística y Artística (DGESTTLA).</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Educación Superior Universitaria.">
+                                <option value="Dirección General de Educación Superior Universitaria.">Dirección General de Educación Superior Universitaria.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Formación de Maestros.">
+                                <option value="Dirección General de Formación de Maestros.">Dirección General de Formación de Maestros.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Ciencia y Tecnología (DGCT).">
+                                <option value="Dirección General de Ciencia y Tecnología (DGCT).">Dirección General de Ciencia y Tecnología (DGCT).</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Ciencia y Tecnología (DGCT).">
+                                <option value="Unidad de Ciencia y Tecnología.">Unidad de Ciencia y Tecnología.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Tecnología de la Información y Comunicación (DGTIC).">
+                                <option value="Dirección General de Tecnología de la Información y Comunicación (DGTIC).">Dirección General de Tecnología de la Información y Comunicación (DGTIC).</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Deportes.">
+                                <option value="Unidad De Desarrollo Integral de Deporte.">Unidad De Desarrollo Integral de Deporte.</option>
+                                <option value="Unidad de Coordinación y Apoyo al Deporte.">Unidad de Coordinación y Apoyo al Deporte.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Formación Deportiva.">
+                                <option value="Unidad de Coordinación de Centros Deportivos.">Unidad de Coordinación de Centros Deportivos.</option>
+                                <option value="Unidad de Formación, Promoción y recreación deportiva.">Unidad de Formación, Promoción y recreación deportiva.</option>
+                              </optgroup>
+                              <optgroup label="Dirección General de Patrimonio Cultural.">
+                                <option value="Unidad De Patrimonio Inmaterial.">Unidad De Patrimonio Inmaterial.</option>
+                                <option value="Unidad de Monumentos y Sitios Históricos y Bienes Culturales.">Unidad de Monumentos y Sitios Históricos y Bienes Culturales.</option>
+                                <option value="Unidad de Arqueología y Museos.">Unidad de Arqueología y Museos.</option>
+                              </optgroup>
+
+                              <optgroup label="Dirección General de Promoción Cultural y artística.">
+                                <option value="Unidad de Industrias Culturales.">Unidad de Industrias Culturales.</option>
+                                <option value="Unidad de Producción de Eventos Artísticos.">Unidad de Producción de Eventos Artísticos.</option>
+                                <option value="Unidad de Producción Comunicacional.">Unidad de Producción Comunicacional.</option>
+                              </optgroup>
+
+                              <optgroup label="UNIDADES QUE NO DEPENDEN DE DIRECCIONES.">
+                                <option value="Sistema Plurinacional de Certificados de Competencias.">Sistema Plurinacional de Certificados de Competencias.</option>
+                               
+                              </optgroup>
+                              
+    
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                           <label for="cargo">Cargo actual</label>
                           <select name="cargo" class="form-control" id="cargo">
-                      <option value="" selected="selected">Seleccione el Cargo</option>
-                      <option value="195">ADMINISTRACIÓN FINANCIERA</option>
-                      <option value="202">ADMINISTRATIVO</option>
-                      <option value="63">ALCALDE</option>
-                      <option value="12">ANALISTA</option>
-                      <option value="48">ASAMBLEISTA</option>
-                      <option value="3">ASESOR/A GENERAL</option>
-                      <option value="31">ASISTENTE</option>
-                      <option value="116">AUDITOR INTERNO</option>
-                      <option value="196">AUTORIDAD ORIGINARIA</option>
-                      <option value="132">CHOFER</option>
-                      <option value="64">CONCEJAL</option>
-                      <option value="36">CONSULTOR</option>
-                      <option value="65">CONTADOR</option>
-                      <option value="160">COORDINADOR</option>
-                      <option value="2">DIRECTOR/A</option>
-                      <option value="62">DIRIGENTE</option>
-                      <option value="201">DOCENTE</option>
-                      <option value="169">ENCARGADO DE LIMPIEZA</option>
-                      <option value="59">ENCARGADO DE PERSONAL</option>
-                      <option value="134">ESPECIALISTA</option>
-                      <option value="56">GERENTE</option>
-                      <option value="205">GESTOR PLATAFORMA VIRTUAL</option>
-                      <option value="0">INDEPENDIENTE</option>
-                      <option value="5">JEFE DE UNIDAD O AREA</option>
-                      <option value="1">MAXIMA AUTORIDAD EJECUTIVA</option>
-                      <option value="200">MINISTRO/A</option>
-                      <option value="29">NO CUENTA CON CARGO ACTUAL</option>
-                      <option value="71">OTROS</option>
-                      <option value="197">PARLAMENTARIO/A SUPRAESTATAL</option>
-                      <option value="119">PASANTE</option>
-                      <option value="187">PRESIDENTE</option>
-                      <option value="17">PROFESIONAL</option>
-                      <option value="49">PROFESOR/A O DOCENTE</option>
-                      <option value="55">RECAUDADOR/A</option>
-                      <option value="142">RECEPCIONISTA</option>
-                      <option value="199">SECRETARIA</option>
-                      <option value="130">SERENO</option>
-                      <option value="198">SERVIDOR/A PUBLICO</option>
-                      <option value="38">SIN DEFINIR</option>
-                      <option value="61">SUPERVISOR (A)</option>
-                      <option value="21">TECNICO</option>
-                      <option value="204">TRABAJADORA SOCIAL</option>
-                      <option value="180">VICEMINISTRO/A</option>
-                      <option value="203">VICEPRESIDENTE</option>
-                      </select>
+                          <option value="" selected="selected">Seleccione el Cargo</option>
+                          <option value="195">ADMINISTRACIÓN FINANCIERA</option>
+                          <option value="202">ADMINISTRATIVO</option>
+                          <option value="63">ALCALDE</option>
+                          <option value="12">ANALISTA</option>
+                          <option value="48">ASAMBLEISTA</option>
+                          <option value="3">ASESOR/A GENERAL</option>
+                          <option value="31">ASISTENTE</option>
+                          <option value="116">AUDITOR INTERNO</option>
+                          <option value="196">AUTORIDAD ORIGINARIA</option>
+                          <option value="132">CHOFER</option>
+                          <option value="64">CONCEJAL</option>
+                          <option value="36">CONSULTOR</option>
+                          <option value="65">CONTADOR</option>
+                          <option value="160">COORDINADOR</option>
+                          <option value="2">DIRECTOR/A</option>
+                          <option value="62">DIRIGENTE</option>
+                          <option value="201">DOCENTE</option>
+                          <option value="169">ENCARGADO DE LIMPIEZA</option>
+                          <option value="59">ENCARGADO DE PERSONAL</option>
+                          <option value="134">ESPECIALISTA</option>
+                          <option value="56">GERENTE</option>
+                          <option value="205">GESTOR PLATAFORMA VIRTUAL</option>
+                          <option value="0">INDEPENDIENTE</option>
+                          <option value="5">JEFE DE UNIDAD O AREA</option>
+                          <option value="1">MAXIMA AUTORIDAD EJECUTIVA</option>
+                          <option value="200">MINISTRO/A</option>
+                          <option value="29">NO CUENTA CON CARGO ACTUAL</option>
+                          <option value="71">OTROS</option>
+                          <option value="197">PARLAMENTARIO/A SUPRAESTATAL</option>
+                          <option value="119">PASANTE</option>
+                          <option value="187">PRESIDENTE</option>
+                          <option value="17">PROFESIONAL</option>
+                          <option value="49">PROFESOR/A O DOCENTE</option>
+                          <option value="55">RECAUDADOR/A</option>
+                          <option value="142">RECEPCIONISTA</option>
+                          <option value="199">SECRETARIA</option>
+                          <option value="130">SERENO</option>
+                          <option value="198">SERVIDOR/A PUBLICO</option>
+                          <option value="38">SIN DEFINIR</option>
+                          <option value="61">SUPERVISOR (A)</option>
+                          <option value="21">TECNICO</option>
+                          <option value="204">TRABAJADORA SOCIAL</option>
+                          <option value="180">VICEMINISTRO/A</option>
+                          <option value="203">VICEPRESIDENTE</option>
+                          </select>
 
                         </div>
                       </div>

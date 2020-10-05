@@ -43,6 +43,7 @@ class Servicios extends Controller
         $inscripcion -> email = $request ->email;
         $inscripcion -> profesion = $request ->profesion;
         $inscripcion -> empresa = $request ->empresa;
+        $inscripcion -> unidad = $request ->unidad;
         $inscripcion -> cargo = $request ->cargo;
 
 

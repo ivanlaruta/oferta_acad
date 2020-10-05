@@ -139,7 +139,8 @@ class CursosController extends Controller
 				c.email_infor,
 				c.horarios,
 				cast(c.fec_fin_preins as date) fec_fin_preins,
-				concat('http://webdisk.cursos.egpp.gob.bo/sisacademico/archivos/',c.id_curso,'/',c.link_imagen) url_imagen
+				concat('http://webdisk.cursos.egpp.gob.bo/sisacademico/archivos/',c.id_curso,'/',c.link_imagen) url_imagen,
+				u.tel_interno
 				from 		gesac.cursos c
 							join gesac.tipos_cursos as t on t.id_tipo_curso = c.tipo
 							join gesac.areas_cursos as a on a.id_area_curso =c.area
