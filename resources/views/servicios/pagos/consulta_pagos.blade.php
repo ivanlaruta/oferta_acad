@@ -33,9 +33,9 @@
                             <th>Ci</th>
                             <th>Nombre</th> 
                             <th>Curso</th>                            
-                            <th>Factura</th>                            
                             <th>Monto</th>                            
                             <th>Fecha</th>                            
+                            <th>Factura</th>                            
                             <th>Control</th>                            
                           </tr>
                         </thead>
@@ -104,9 +104,9 @@
                 {data: 'ci'},
                 {data: 'nombre_alumno'},
                 {data: 'curso'},
-                {data: 'nro_factura'},
                 {data: 'monto_pagado'},
                 {data: 'fecha_pago'},
+                {data: 'nro_factura'},
                 {data: 'codigo_control'}
             ]
         });
