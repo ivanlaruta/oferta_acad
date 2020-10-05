@@ -178,8 +178,8 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                          <label for="profesion">Profesión</label>
-                          <select name="profesion" class="form-control" id="profesion">
+                          <label for="profesion">Profesión <span style="color:red">*</span></label>
+                          <select name="profesion" class="form-control" id="profesion" required="required">
                             <option value="" selected="selected">Seleccione la Profesión</option>
                             @foreach($profesiones as $det)
                                 <option value="{{$det->id_profesion}}">{{$det->profesion}}</option>
@@ -191,8 +191,8 @@
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                          <label for="empresa">Empresa/Institución donde trabaja</label>
-                          <select name="empresa" class="form-control" id="empresa">
+                          <label for="empresa">Empresa/Institución donde trabaja<span style="color:red">*</span></label>
+                          <select name="empresa" class="form-control" id="empresa" required="required">
                             <option value="" selected="selected">Seleccione la empresa</option>
                             
                             <option value="1">MINISTERIO DE EDUCACION - MINEDU</option>
@@ -204,8 +204,8 @@
 
                       <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                          <label for="unidad">Unidad</label>
-                          <select name="unidad" class="form-control" id="unidad">
+                          <label for="unidad">Unidad<span style="color:red">*</span></label>
+                          <select name="unidad" class="form-control" id="unidad" required="required">
                             <option value="" selected="selected">Seleccione su unidad</option>
                             
                               <optgroup label="Despacho del Ministro de Educación, Deportes y Culturas.">
@@ -293,8 +293,8 @@
 
                       <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                          <label for="cargo">Cargo actual</label>
-                          <select name="cargo" class="form-control" id="cargo">
+                          <label for="cargo">Cargo actual<span style="color:red">*</span></label>
+                          <select name="cargo" class="form-control" id="cargo" required="required">
                           <option value="" selected="selected">Seleccione el Cargo</option>
                           <option value="195">ADMINISTRACIÓN FINANCIERA</option>
                           <option value="202">ADMINISTRATIVO</option>
