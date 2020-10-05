@@ -97,7 +97,7 @@
                       <div class="col-xs-12 col-sm-4 col-sm-6">
                         <div class="form-group">
                           <label for="ciudad_vive">Ciudad donde vive</label>
-                          <select name="ciudad_vive" class=":required form-control   vanadium-valid" id="ciudad_vive">
+                          <select name="ciudad_vive" class=":required form-control   vanadium-valid" id="ciudad_vive" required="required">
                             <option value="" selected="selected">Seleccione la ciudad</option>
                             @foreach($ciudades as $det)
                                 <option value="{{$det->id_ciudad}}">{{$det->departamento_sigla}} - {{$det->ciudad}}</option>
