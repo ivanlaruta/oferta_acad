@@ -209,22 +209,26 @@
                             <option value="" selected="selected">Seleccione su unidad</option>
                             
                               <optgroup label="Despacho del Ministro de Educación, Deportes y Culturas.">
+                                <option value="Despacho del Ministro de Educación, Deportes y Culturas">Despacho del Ministro de Educación, Deportes y Culturas</option>
                                 <option value="Jefatura de Gabinete">Jefatura de Gabinete</option>
                                 <option value="Unidad de Transparencia">Unidad de Transparencia</option>
                                 <option value="Unidad De Comunicación Social">Unidad De Comunicación Social</option>
                                 <option value="Unidad De Auditoría interna">Unidad De Auditoría interna</option>
                               </optgroup>
                               <optgroup label="Dirección General De Asuntos Administrativos (DGAA).">
+                                <option value="Dirección General De Asuntos Administrativos (DGAA)">Dirección General De Asuntos Administrativos (DGAA)</option>
                                 <option value="Unidad Financiera">Unidad Financiera</option>
                                 <option value="Unidad  Administrativa">Unidad  Administrativa</option>
                                 <option value="URRHHyDO">URRHHyDO</option>
                                 <option value="Unidad de Gestión de Perrsonal del SEP">Unidad de Gestión de Perrsonal del SEP</option>
                               </optgroup>
                               <optgroup label="Dirección General de Asuntos Jurídicos (DGAJ).">
+                                <option value="Dirección General de Asuntos Jurídicos (DGAJ)">Dirección General de Asuntos Jurídicos (DGAJ)</option>
                                 <option value="Unidad de Análisis Jurídico">Unidad de Análisis Jurídico</option>
                                 <option value="Unidad de Gestión Jurídica">Unidad de Gestión Jurídica</option>
                               </optgroup>
                               <optgroup label="Dirección General de Planificación (DGP).">
+                                <option value="Dirección General de Planificación (DGP)">Dirección General de Planificación (DGP)</option>
                                 <option value="Unidad de Políticas de Intraculturalidad, Interculturalidad y Plurilingüismo">Unidad de Políticas de Intraculturalidad, Interculturalidad y Plurilingüismo</option>
                                 <option value="Unidad de Sistemas">Unidad de Sistemas</option>
                               </optgroup>
@@ -241,6 +245,7 @@
                                 <option value="Dirección General de Educación Especial.">Dirección General de Educación Especial.</option>
                               </optgroup>
                               <optgroup label="Dirección General de Post Alfabetización.">
+                                <option value="Dirección General de Post Alfabetización">Dirección General de Post Alfabetización</option>
                                 <option value="Unidad Ejecutora del Programa de Postalfabetización">Unidad Ejecutora del Programa de Postalfabetización</option>
                               </optgroup>
                               <optgroup label="Dirección General de Educación Superior Técnica Tecnológica, Lingüística y Artística (DGESTTLA).">
@@ -252,36 +257,40 @@
                               <optgroup label="Dirección General de Formación de Maestros.">
                                 <option value="Dirección General de Formación de Maestros.">Dirección General de Formación de Maestros.</option>
                               </optgroup>
+                              
                               <optgroup label="Dirección General de Ciencia y Tecnología (DGCT).">
                                 <option value="Dirección General de Ciencia y Tecnología (DGCT).">Dirección General de Ciencia y Tecnología (DGCT).</option>
-                              </optgroup>
-                              <optgroup label="Dirección General de Ciencia y Tecnología (DGCT).">
                                 <option value="Unidad de Ciencia y Tecnología.">Unidad de Ciencia y Tecnología.</option>
                               </optgroup>
                               <optgroup label="Dirección General de Tecnología de la Información y Comunicación (DGTIC).">
                                 <option value="Dirección General de Tecnología de la Información y Comunicación (DGTIC).">Dirección General de Tecnología de la Información y Comunicación (DGTIC).</option>
                               </optgroup>
                               <optgroup label="Dirección General de Deportes.">
+                                <option value="Dirección General de Deportes.">Dirección General de Deportes.</option>
                                 <option value="Unidad De Desarrollo Integral de Deporte.">Unidad De Desarrollo Integral de Deporte.</option>
                                 <option value="Unidad de Coordinación y Apoyo al Deporte.">Unidad de Coordinación y Apoyo al Deporte.</option>
                               </optgroup>
                               <optgroup label="Dirección General de Formación Deportiva.">
+                                <option value="Dirección General de Formación Deportiva.">Dirección General de Formación Deportiva.</option>
                                 <option value="Unidad de Coordinación de Centros Deportivos.">Unidad de Coordinación de Centros Deportivos.</option>
                                 <option value="Unidad de Formación, Promoción y recreación deportiva.">Unidad de Formación, Promoción y recreación deportiva.</option>
-                              </optgroup>
+                              </optgrou|p>
                               <optgroup label="Dirección General de Patrimonio Cultural.">
+                                <option value="Dirección General de Patrimonio Cultural.">Dirección General de Patrimonio Cultural.</option>
                                 <option value="Unidad De Patrimonio Inmaterial.">Unidad De Patrimonio Inmaterial.</option>
                                 <option value="Unidad de Monumentos y Sitios Históricos y Bienes Culturales.">Unidad de Monumentos y Sitios Históricos y Bienes Culturales.</option>
                                 <option value="Unidad de Arqueología y Museos.">Unidad de Arqueología y Museos.</option>
                               </optgroup>
 
                               <optgroup label="Dirección General de Promoción Cultural y artística.">
+                                <option value="Dirección General de Promoción Cultural y artística.">Dirección General de Promoción Cultural y artística.</option>
                                 <option value="Unidad de Industrias Culturales.">Unidad de Industrias Culturales.</option>
                                 <option value="Unidad de Producción de Eventos Artísticos.">Unidad de Producción de Eventos Artísticos.</option>
                                 <option value="Unidad de Producción Comunicacional.">Unidad de Producción Comunicacional.</option>
                               </optgroup>
 
                               <optgroup label="UNIDADES QUE NO DEPENDEN DE DIRECCIONES.">
+                                <option value="Unidades que no dependen de direcciones.">unidades que no dependen de direcciones.</option>
                                 <option value="Sistema Plurinacional de Certificados de Competencias.">Sistema Plurinacional de Certificados de Competencias.</option>
                                
                               </optgroup>
