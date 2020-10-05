@@ -214,7 +214,7 @@
                                 <option value="Unidad De Comunicación Social">Unidad De Comunicación Social</option>
                                 <option value="Unidad De Auditoría interna">Unidad De Auditoría interna</option>
                               </optgroup>
-                              <optgroup label="Despacho del Ministro de Educación, Deportes y Culturas.">
+                              <optgroup label="Dirección General De Asuntos Administrativos (DGAA).">
                                 <option value="Unidad Financiera">Unidad Financiera</option>
                                 <option value="Unidad  Administrativa">Unidad  Administrativa</option>
                                 <option value="URRHHyDO">URRHHyDO</option>
