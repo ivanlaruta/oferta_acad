@@ -24,7 +24,7 @@
                     <li class="nav-item {{ Request::routeIs('oferta_wapp') ? 'active' : '' }}">
                         <a href="{{ route('oferta_wapp')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Oferta Bot Wapp</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::routeIs('programacion_rrss') ? 'active' : '' }}">
                         <a href="{{ route('programacion_rrss')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Programacion RRSS</span></a>
                     </li>
                    

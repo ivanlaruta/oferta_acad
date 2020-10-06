@@ -298,6 +298,30 @@
                                 <option value="Unidad de Titulos.">Unidad de Titulos.</option>
                               </optgroup>
                               
+                              <optgroup label="Viceministerio de Educación Regular">
+                                <option value="Viceministerio de Educación Regular">Viceministerio de Educación Regular</option>
+                              </optgroup>
+                              
+                              <optgroup label="Viceministerio de Educación Alternativa y Especial">
+                                <option value="Viceministerio de Educación Alternativa y Especial">Viceministerio de Educación Alternativa y Especial</option>
+                              </optgroup>
+                              
+                              <optgroup label="Viceministerio de Educación Superior y Formación Profesional">
+                                <option value="Viceministerio de Educación Superior y Formación Profesional">Viceministerio de Educación Superior y Formación Profesional</option>
+                              </optgroup>
+                              
+                              <optgroup label="Viceministerio de Ciencia y Tecnología">
+                                <option value="Viceministerio de Ciencia y Tecnología">Viceministerio de Ciencia y Tecnología</option>
+                              </optgroup>
+                              
+                              <optgroup label="Viceministerio de Deportes">
+                                <option value="Viceministerio de Deportes">Viceministerio de Deportes</option>
+                              </optgroup>
+                              
+                              <optgroup label="Viceministerio de Interculturalidad">
+                                <option value="Viceministerio de Interculturalidad">Viceministerio de Interculturalidad</option>
+                              </optgroup>
+                              
     
                           </select>
                         </div>

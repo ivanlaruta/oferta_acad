@@ -96,13 +96,19 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                                <br> _{{$det_cuso->area_curso}}_
+                                                                <br> ‼️ <b>{{$det_cuso->area_curso}}</b> ‼️
+                                                                <br> &nbsp;
+                                                                <br> 👇 Inscripciones e información: 👇
+                                                                
+                                                                <br> {{$det_cuso->url_gesac}}
+                                                                <br>
+                                                                <br> ‼️ <b>{{$det_cuso->area_curso}}</b> ‼️
                                                                 <br>  📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
                                                                 <br>  ⏰ Horarios: {{$det_cuso->horarios}}
                                                                 <br>  💲 Inversion: Bs. {{$det_cuso->costo_curso}}
                                                                 <br>  🌐 Para ver mas detalle e inscripcion siga este enlace: ⬇️⬇️⬇️⬇️ 
-                                                                <br>  {{services($det_cuso->url_gesac)}}
-                                                                <hr>  &nbsp;
+                                                                <br> 
+                                                                <hr>  
                                                                 <br>  🙋‍♀️🙋‍♂️ Coordinacion: *{{$det_cuso->coordinador}}*
                                                                 <br>  📧 Correo:{{$det_cuso->email_infor}}
                                                                 @if(!empty($det_cuso->tel_interno))
@@ -110,7 +116,7 @@
                                                                 @endif
                                                                 @if(!empty($det_cuso->tel_movil))
                                                                 <br>  📱 celular: {{$det_cuso->tel_movil}}
-                                                                <br>  📲 Whatsapp: {{services($det_cuso->url_wapp)}}
+                                                                <br>  📲 Whatsapp: 
                                                                 @endif
                                                                 <br><br>
                                                             </td>     
