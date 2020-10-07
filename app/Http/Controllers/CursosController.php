@@ -129,6 +129,7 @@ class CursosController extends Controller
 				c.duracion,
 				c.modalidad,
 				c.costo_curso,
+				c.contenido,
 				c.tipo_pago,
 				t.tipo_curso,
 				c.email_infor,

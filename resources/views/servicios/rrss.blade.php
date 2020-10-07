@@ -98,27 +98,23 @@
                                                             <td>
                                                                 <br> ‼️ <b>{{$det_cuso->area_curso}}</b> ‼️
                                                                 <br> &nbsp;
-                                                                <br> 👇 Inscripciones e información: 👇
-                                                                
+                                                                <br> 👇 Inscripciones ,información y costo: 👇
                                                                 <br> {{$det_cuso->url_gesac}}
-                                                                <br>
-                                                                <br> ‼️ <b>{{$det_cuso->area_curso}}</b> ‼️
-                                                                <br>  📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
-                                                                <br>  ⏰ Horarios: {{$det_cuso->horarios}}
-                                                                <br>  💲 Inversion: Bs. {{$det_cuso->costo_curso}}
-                                                                <br>  🌐 Para ver mas detalle e inscripcion siga este enlace: ⬇️⬇️⬇️⬇️ 
-                                                                <br> 
-                                                                <hr>  
-                                                                <br>  🙋‍♀️🙋‍♂️ Coordinacion: *{{$det_cuso->coordinador}}*
+                                                                <br> &nbsp;
+                                                                <br> 📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
+                                                                <br> ⏰ Horarios: {{$det_cuso->horarios}}
+                                                                <br> &nbsp;
+                                                                <br> 👋 Coordinación: {{$det_cuso->coordinador}}
                                                                 <br>  📧 Correo:{{$det_cuso->email_infor}}
-                                                                @if(!empty($det_cuso->tel_interno))
+                                                                    @if(!empty($det_cuso->tel_interno))
                                                                 <br>  ☎️ Telefono: 2 200353 Int. {{$det_cuso->tel_interno}}
-                                                                @endif
+                                                                    @endif
                                                                 @if(!empty($det_cuso->tel_movil))
                                                                 <br>  📱 celular: {{$det_cuso->tel_movil}}
-                                                                <br>  📲 Whatsapp: 
+                                                                <br>  📲 Whatsapp: {{$det_cuso->tel_movil}}
                                                                 @endif
-                                                                <br><br>
+
+
                                                             </td>     
                                                         </tr>
                                                     </tbody>
