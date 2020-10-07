@@ -47,21 +47,21 @@ class Servicios extends Controller
         $inscripcion -> cargo = $request ->cargo;
 
 
-        if (in_array("idioma_subv", $request->check)) { 
-			$inscripcion -> idioma_subv = 1;
-			$inscripcion -> idioma_subv_detalle = $request ->select_idioma1;
-		} 
-        if (in_array("ofimatica_subv", $request->check)) { 
-            $inscripcion -> ofimatica_subv = 1;
-        } 
-		if (in_array("combo2_subv", $request->check)) { 
-			$inscripcion -> violencia_subv = 1;
-			$inscripcion -> rel_humanas_subv = 1;
-		}
-        if (in_array("combo_subv", $request->check)) { 
-            $inscripcion -> ley_004_subv = 1;
-            $inscripcion -> responsabilidad_subv = 1;
-        }
+  //       if (in_array("idioma_subv", $request->check)) { 
+		// 	$inscripcion -> idioma_subv = 1;
+		// 	$inscripcion -> idioma_subv_detalle = $request ->select_idioma1;
+		// } 
+  //       if (in_array("ofimatica_subv", $request->check)) { 
+  //           $inscripcion -> ofimatica_subv = 1;
+  //       } 
+		// if (in_array("combo2_subv", $request->check)) { 
+		// 	$inscripcion -> violencia_subv = 1;
+		// 	$inscripcion -> rel_humanas_subv = 1;
+		// }
+  //       if (in_array("combo_subv", $request->check)) { 
+  //           $inscripcion -> ley_004_subv = 1;
+  //           $inscripcion -> responsabilidad_subv = 1;
+  //       }
 		if (in_array("violencia", $request->check)) { 
 			$inscripcion -> violencia_desc = 1;
 		}
