@@ -94,4 +94,13 @@ class Servicios extends Controller
         return ($persona);
     }
 
+    public function correos_minedu()
+    {
+       
+       $inscritos = InscripcionAux::all();
+        return view('servicios.correos')
+            ->with('inscritos',$inscritos);
+
+    }
+
 }

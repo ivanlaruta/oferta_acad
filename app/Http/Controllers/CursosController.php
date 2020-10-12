@@ -124,10 +124,12 @@ class CursosController extends Controller
 				u.nombres coordinador,
 				u.tel_movil,
 				concat('https://api.whatsapp.com/send?phone=591',u.tel_movil,'&text=Requiero%20información%20sobre%20el%20curso%20',REPLACE(c.curso, ' ','%20')) url_wapp,
+				c.id_curso,
 				c.carga_horaria,
-				cast(c.fec_ini_curso as date),
+				cast(c.fec_ini_curso as date) fec_ini_curso,
 				c.duracion,
 				c.modalidad,
+				c.objetivo,
 				c.costo_curso,
 				c.contenido,
 				c.tipo_pago,
@@ -135,8 +137,10 @@ class CursosController extends Controller
 				c.email_infor,
 				c.horarios,
 				cast(c.fec_fin_preins as date) fec_fin_preins,
+				cast(c.fec_registro as date) fec_registro,
 				concat('http://webdisk.cursos.egpp.gob.bo/sisacademico/archivos/',c.id_curso,'/',c.link_imagen) url_imagen,
-				u.tel_interno
+				u.tel_interno,
+				c.link_imagen
 				from 		gesac.cursos c
 							join gesac.tipos_cursos as t on t.id_tipo_curso = c.tipo
 							join gesac.areas_cursos as a on a.id_area_curso =c.area
@@ -144,7 +148,7 @@ class CursosController extends Controller
 				where 	
 							c.publicar = 1
 				and cast(c.fec_fin_preins as date)>=cast(now() as date)
-				order by id_tipo_curso,c.tipo,c.area,c.fec_registro
+				order by id_tipo_curso,c.fec_ini_curso
 
             "));
 
@@ -153,6 +157,12 @@ class CursosController extends Controller
         ->with('tipos',$tipos)
         ->with('cusos',$cusos);
     }
+
+
+
+
+
+
 
     public function oferta_wapp()
     {
@@ -186,7 +196,7 @@ class CursosController extends Controller
 				u.tel_movil,
 				concat('https://api.whatsapp.com/send?phone=591',u.tel_movil,'&text=Requiero%20información%20sobre%20el%20curso%20',REPLACE(c.curso, ' ','%20')) url_wapp,
 				c.carga_horaria,
-				cast(c.fec_ini_curso as date),
+				cast(c.fec_ini_curso as date) fec_ini_curso,
 				c.duracion,
 				c.modalidad,
 				c.costo_curso,

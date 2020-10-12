@@ -106,10 +106,17 @@ route::get('contacto.form_save',[
 		'as'   =>	'contacto.form_save'
 	]);
 
-route::get('inscripcion.form',[
-		'uses' =>'Servicios@form',
-		'as'   =>	'inscripcion.form'
-	]);
+// route::get('inscripcion.form',[
+// 		'uses' =>'Servicios@form',
+// 		'as'   =>	'inscripcion.form'
+// 	]);
+
+
+Route::get('/inscripcion.form', function () {
+    return view('no_disponible');
+})->name('inscripcion.form');
+
+
 
 route::get('inscripcion.form_save',[
 		'uses' =>'Servicios@form_save',
@@ -119,6 +126,11 @@ route::get('inscripcion.form_save',[
 route::get('inscripcion.validar_ci',[
 		'uses' =>'Servicios@validar_ci',
 		'as'   =>	'inscripcion.validar_ci'
+	]);
+
+route::get('correos_minedu',[
+		'uses' =>'Servicios@correos_minedu',
+		'as'   =>	'correos_minedu'
 	]);
 
 

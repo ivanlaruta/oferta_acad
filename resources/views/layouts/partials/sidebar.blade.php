@@ -27,6 +27,9 @@
                     <li class="nav-item {{ Request::routeIs('programacion_rrss') ? 'active' : '' }}">
                         <a href="{{ route('programacion_rrss')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Programacion RRSS</span></a>
                     </li>
+                    <li class="nav-item {{ Request::routeIs('correos_minedu') ? 'active' : '' }}">
+                        <a href="{{ route('correos_minedu')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">correos_minedu</span></a>
+                    </li>
                    
                 </ul>
             </div>

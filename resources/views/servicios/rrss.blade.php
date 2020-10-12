@@ -37,7 +37,10 @@
 
     }
 ?>
-
+<style type="text/css">
+    table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
+</style>
 
 @extends('layouts.main')
 
@@ -79,30 +82,70 @@
                                             <h5>OFERTA ACADEMICA</h5>
                                         </div>
                                         <div class="card-block table-border-style">
-                                            @foreach($tipos as $det_tipo)
-                                            <h4>🎓 *{{$det_tipo->tipo_oferta}}* 🎓</h4>
                                             <div class="table-responsive">
-                                              @foreach($cusos as $det_cuso)
-                                                @if($det_tipo->tipo_oferta == $det_cuso->tipo_oferta)
-                                                <table class="table table-hover table-bordered datatables">
+                                                
+                                                <table class="table table-bordered datatables fixed">
+                                                    <col width="8px" />
+                                                    <col width="25px" />
+                                                    <col width="10px" />
                                                     <thead>
+                                                        
                                                         <tr>
-                                                            <th> 
-                                                                <strong>  ✅ &nbsp; *{{$det_cuso->curso}}* </strong>
-                                                            </th>
-                                                           
+                                                            <th>#</th>
+                                                            <th>PUBLICACION</th>
+                                                            <th>INICIO</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+                                                        @foreach($cusos as $det_cuso)
                                                         <tr>
-                                                            <td>
-                                                                <br> ‼️ <b>{{$det_cuso->area_curso}}</b> ‼️
+                                                            <td><small>
+                                                                #{{$det_cuso->id_curso}}
+                                                                <br>
+                                                                @if($det_cuso->link_imagen!='')
+                                                                  <img src="{{$det_cuso->url_imagen}}" class="img-fluid" alt="">
+                                                                @else
+                                                                  <img src="{{URL::asset('img/generico.png')}}" class="img-fluid" alt="">
+                                                                @endif
+                                                                <br>{{$det_cuso->tipo_oferta}}
+                                                                <br>Creacion: {{$det_cuso->fec_registro}}
+
+                                                                <div class="card-block border-bottom">
+                                                                    <div class="row d-flex align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <i class="feather icon-bell f-30 text-c-green"></i>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <h3 class="f-w-300">235</h3>
+                                                                            <span class="d-block text-uppercase">TOTAL PRE INSCRITOS</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card-block border-bottom">
+                                                                    <div class="row d-flex align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <i class="feather icon-zap f-30 text-c-green"></i>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <h3 class="f-w-300">235</h3>
+                                                                            <span class="d-block text-uppercase">TOTAL INSCRITOS</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </small></td>
+                                                            
+                                                            <td style="width: 10%">
+                                                                <strong>  ✔️✔️ &nbsp; {{$det_cuso->curso}} </strong>
                                                                 <br> &nbsp;
                                                                 <br> 👇 Inscripciones ,información y costo: 👇
-                                                                <br> {{$det_cuso->url_gesac}}
+                                                                <br> {{services($det_cuso->url_gesac)}}
                                                                 <br> &nbsp;
                                                                 <br> 📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
                                                                 <br> ⏰ Horarios: {{$det_cuso->horarios}}
+                                                                <br> 🖱 Modalidad: VIRTUAL
+                                                                <br> ⌛️ Carga Horaria: {{$det_cuso->carga_horaria}} Horas académicas.
+                                                                <br> 💵 Inversión (Al Contado): Bs. {{$det_cuso->costo_curso}}
                                                                 <br> &nbsp;
                                                                 <br> 👋 Coordinación: {{$det_cuso->coordinador}}
                                                                 <br>  📧 Correo:{{$det_cuso->email_infor}}
@@ -111,20 +154,18 @@
                                                                     @endif
                                                                 @if(!empty($det_cuso->tel_movil))
                                                                 <br>  📱 celular: {{$det_cuso->tel_movil}}
-                                                                <br>  📲 Whatsapp: {{$det_cuso->tel_movil}}
+                                                                <br>  📲 Whatsapp: {{services($det_cuso->url_wapp)}}
                                                                 @endif
-
-
                                                             </td>     
+                                                            <td>{{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}</td>
                                                         </tr>
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             <br><hr>
-                                                @endif
-                                              @endforeach
+                                                
                                             </div>
 
-                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
@@ -139,15 +180,15 @@
         </div>
     </section>
     <!-- [ Main Content ] end --> 
-
-
 @endsection
+
 
 @section('js')
 <script type="text/javascript">
- 
-   var table = $('.datatables').DataTable({
-     dom: 'Brt',
+
+    var table = $('.datatables').DataTable({
+     dom: 'fti',
+     bSort : false,
      buttons: [{
         extend:'copy',
         title: '',

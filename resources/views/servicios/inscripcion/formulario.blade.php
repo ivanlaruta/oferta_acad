@@ -396,9 +396,73 @@
 
           <div class="page-wrapper">
             <div class="row">
-             
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Cursos <b>subvencionados</b> por el Ministerio de Educación, Deportes y Culturas <b>(GRATUITOS)</b></h5>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-muted m-b-30">
+                        Puede seleccionar una de las siguientes opciones:
+                    </p>
+                    <div class="table-responsive">
 
-              <div class="col-md-12 col-sm-12 col-xs-12">
+                    <table class="table"> 
+                      <tr>
+                        <th>Cursos</th>
+                        <th align="right">Costo</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <!-- <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="ch_idioma1" name="check[]" value="idioma_subv" onclick="calc();">
+                            <label class="custom-control-label" for="ch_idioma1">IDIOMA ORIGINARIO</label>
+                            <select class="form-control"  id="select_idioma1" name="select_idioma1">
+                              <option value="Aimara">Aimara</option>
+                              <option value="Quechua">Quechua</option>
+                            </select>
+                          </div> -->
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input mi_check" id="ch_ofimatica" name="check[]" value="ofimatica_subv">
+                            <label class="custom-control-label" for="ch_ofimatica">OFIMATICA</label>
+                            
+                          </div>
+                        </td> 
+                        <td align="right"><label class="lbl_precios" id="lbl_precio_idioma1">Bs. 00</label>  </td>  
+                        <td align="right"><label class="lbl_precios" id="lbl_ofimatica">Bs. 00</label>  </td>  
+
+                      </tr>
+                      <tr>  
+                        <td>
+                          <!-- <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input mi_check" id="ch_combo" name="check[]" value="combo_subv">
+                              <label class="custom-control-label" for="ch_combo">- LEY 004 <br>- RESPONSABILIDAD POR LA FUNCION PUBLICA</label>
+                          </div> -->
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input mi_check" id="ch_combo2" name="check[]" value="combo2_subv">
+                              <label class="custom-control-label" for="ch_combo2">- PREVENCIÓN DE LA VIOLENCIA <br>- RELACIONES HUMANAS</label>
+                          </div>
+                        </td>
+                        <!-- <td align="right"><label class="lbl_precios" id="lbl_precio_combo">Bs. 00</label>  </td>   -->
+                        <td align="right"><label class="lbl_precios" id="lbl_precio_combo2">Bs. 00</label>  </td>  
+                      </tr>                    
+                    </table>
+                    </div>
+
+                    
+                    <div class="alert alert-dark" role="alert">
+                       <strong>Recuerde!</strong> Para que se haga efectiva la subvención,terminado el curso el participante debe presentar el certificado de aprobación al área de recursos humanos del Ministerio de Educación, Deportes y Culturas.
+                    </div>
+
+
+
+
+                  </div>
+                </div>  
+              </div>
+
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="card">
                   <div class="card-header">
                     <h5>Cursos Con 15% descuento</h5>

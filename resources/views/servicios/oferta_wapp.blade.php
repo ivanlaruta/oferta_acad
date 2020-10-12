@@ -100,9 +100,10 @@
                                                                 <br>  📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
                                                                 <br>  ⏰ Horarios: {{$det_cuso->horarios}}
                                                                 <br>  💲 Inversion: Bs. {{$det_cuso->costo_curso}}
+                                                                <br>  &nbsp;
                                                                 <br>  🌐 Para ver mas detalle e inscripcion siga este enlace: ⬇️⬇️⬇️⬇️ 
                                                                 <br>  {{services($det_cuso->url_gesac)}}
-                                                                <hr>  &nbsp;
+                                                                <br>  &nbsp;
                                                                 <br>  🙋‍♀️🙋‍♂️ Coordinacion: *{{$det_cuso->coordinador}}*
                                                                 <br>  📧 Correo:{{$det_cuso->email_infor}}
                                                                 @if(!empty($det_cuso->tel_interno))
