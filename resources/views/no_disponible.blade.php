@@ -6,12 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>EGPP</title>
-<link href="{{asset('bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="{{asset('bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-         <link href="{{asset('bower_components/animate.css/animate.min.css')}}" rel="stylesheet">
+
         <!-- Styles -->
         <style>
             html, body {
@@ -68,7 +66,7 @@
             <div class="content">
 
                 <div class="title m-b-md">
-                  ESTA PÁGINA YA NO ESTÁ DISPONIBLE
+                  PÁGINA NO DISPONIBLE
                 </div>
                 <div class="content" >
                    <p>Lo sentimos esta direccion a caducado</p><br>

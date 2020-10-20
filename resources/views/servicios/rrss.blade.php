@@ -85,7 +85,7 @@ table.fixed td { overflow: hidden; }
                                             <div class="table-responsive">
                                                 
                                                 <table class="table table-bordered datatables fixed">
-                                                    <col width="8px" />
+                                                    <col width="12px" />
                                                     <col width="25px" />
                                                     <col width="10px" />
                                                     <thead>
@@ -113,10 +113,10 @@ table.fixed td { overflow: hidden; }
                                                                 <div class="card-block border-bottom">
                                                                     <div class="row d-flex align-items-center">
                                                                         <div class="col-auto">
-                                                                            <i class="feather icon-bell f-30 text-c-green"></i>
+                                                                            <i class="feather icon-bell f-20 text-c-red"></i>
                                                                         </div>
                                                                         <div class="col">
-                                                                            <h3 class="f-w-300">235</h3>
+                                                                            <h3 class="f-w-150">{{$det_cuso->pre_inscritos}}</h3>
                                                                             <span class="d-block text-uppercase">TOTAL PRE INSCRITOS</span>
                                                                         </div>
                                                                     </div>
@@ -125,20 +125,21 @@ table.fixed td { overflow: hidden; }
                                                                 <div class="card-block border-bottom">
                                                                     <div class="row d-flex align-items-center">
                                                                         <div class="col-auto">
-                                                                            <i class="feather icon-zap f-30 text-c-green"></i>
+                                                                            <i class="feather icon-zap f-20 text-c-green"></i>
                                                                         </div>
                                                                         <div class="col">
-                                                                            <h3 class="f-w-300">235</h3>
+                                                                            <h3 class="f-w-150">{{$det_cuso->inscritos}}</h3>
                                                                             <span class="d-block text-uppercase">TOTAL INSCRITOS</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
                                                             </small></td>
                                                             
                                                             <td style="width: 10%">
                                                                 <strong>  ✔️✔️ &nbsp; {{$det_cuso->curso}} </strong>
                                                                 <br> &nbsp;
-                                                                <br> 👇 Inscripciones ,información y costo: 👇
+                                                                <br> 👇 Inscripciones, información y costo: 👇
                                                                 <br> {{services($det_cuso->url_gesac)}}
                                                                 <br> &nbsp;
                                                                 <br> 📅 Inicio: {{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}
@@ -148,13 +149,14 @@ table.fixed td { overflow: hidden; }
                                                                 <br> 💵 Inversión (Al Contado): Bs. {{$det_cuso->costo_curso}}
                                                                 <br> &nbsp;
                                                                 <br> 👋 Coordinación: {{$det_cuso->coordinador}}
-                                                                <br>  📧 Correo:{{$det_cuso->email_infor}}
+                                                                <br>  📧 Correo: {{$det_cuso->email_infor}}
                                                                     @if(!empty($det_cuso->tel_interno))
-                                                                <br>  ☎️ Telefono: 2 200353 Int. {{$det_cuso->tel_interno}}
+                                                                <br>  ☎️ Teléfono: 2 200353 Int. {{$det_cuso->tel_interno}}
                                                                     @endif
                                                                 @if(!empty($det_cuso->tel_movil))
                                                                 <br>  📱 celular: {{$det_cuso->tel_movil}}
                                                                 <br>  📲 Whatsapp: {{services($det_cuso->url_wapp)}}
+                                                                <br>  &nbsp; 
                                                                 @endif
                                                             </td>     
                                                             <td>{{date("d/m/Y", strtotime($det_cuso->fec_ini_curso))}}</td>
