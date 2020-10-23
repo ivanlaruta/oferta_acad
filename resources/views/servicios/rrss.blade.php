@@ -101,43 +101,47 @@ table.fixed td { overflow: hidden; }
                                                         <tr>
                                                             <td><small>
                                                                 #{{$det_cuso->id_curso}}
+                                                                </small>
                                                                 <br>
                                                                 @if($det_cuso->link_imagen!='')
                                                                   <img src="{{$det_cuso->url_imagen}}" class="img-fluid" alt="">
                                                                 @else
                                                                   <img src="{{URL::asset('img/generico.png')}}" class="img-fluid" alt="">
                                                                 @endif
-                                                                <br>{{$det_cuso->tipo_oferta}}
+                                                                <br><b class="text-c-red">{{$det_cuso->tipo_oferta}}</b>
+                                                                <small>
                                                                 <br>Creacion: {{$det_cuso->fec_registro}}
+                                                                </small>
 
                                                                 <div class="card-block border-bottom">
                                                                     <div class="row d-flex align-items-center">
                                                                         <div class="col-auto">
-                                                                            <i class="feather icon-bell f-20 text-c-red"></i>
+                                                                            @if($det_cuso->pre_inscritos>=25)  
+                                                                            <i class="feather icon-bell f-30 text-c-green"></i>
+                                                                            @else
+                                                                            <i class="feather icon-bell f-30 text-c-red"></i>
+                                                                            @endif
                                                                         </div>
                                                                         <div class="col">
-                                                                            <h3 class="f-w-150">{{$det_cuso->pre_inscritos}}</h3>
+                                                                            @if($det_cuso->pre_inscritos>=30)  
+                                                                            <h3  class="f-w-150 text-c-green" >{{$det_cuso->pre_inscritos}}</h3>
+                                                                            @else
+                                                                            <h3  class="f-w-150 text-c-red" >{{$det_cuso->pre_inscritos}}</h3>
+                                                                            @endif
                                                                             <span class="d-block text-uppercase">TOTAL PRE INSCRITOS</span>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="card-block border-bottom">
-                                                                    <div class="row d-flex align-items-center">
-                                                                        <div class="col-auto">
-                                                                            <i class="feather icon-zap f-20 text-c-green"></i>
-                                                                        </div>
-                                                                        <div class="col">
+                                                                       <!--  <div class="col">
                                                                             <h3 class="f-w-150">{{$det_cuso->inscritos}}</h3>
                                                                             <span class="d-block text-uppercase">TOTAL INSCRITOS</span>
-                                                                        </div>
+                                                                        </div> -->
                                                                     </div>
                                                                 </div>
 
-                                                            </small></td>
+                                                        </td>
                                                             
                                                             <td style="width: 10%">
                                                                 <strong>  ✔️✔️ &nbsp; {{$det_cuso->curso}} </strong>
+                                                                <br> 📌 {{$det_cuso->tipo_oferta}} 📌 
                                                                 <br> &nbsp;
                                                                 <br> 👇 Inscripciones, información y costo: 👇
                                                                 <br> {{services($det_cuso->url_gesac)}}
